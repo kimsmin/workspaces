@@ -1,0 +1,9 @@
+[
+    {
+        "cnameType": "EDGE_HOSTNAME",
+        "edgeHostnameId": 5321968,
+        "cnameFrom": "53206-acidic-fleet.akamai-lab.com",
+        "cnameTo": "53206-acidic-fleet.akamai-lab.com.edgesuite.net",
+        "certProvisioningType": "CPS_MANAGED"
+    }
+]

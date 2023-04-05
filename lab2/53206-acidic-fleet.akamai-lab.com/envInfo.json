@@ -1,0 +1,68 @@
+{
+    "name": "53206-acidic-fleet.akamai-lab.com",
+    "propertyName": "53206-acidic-fleet.akamai-lab.com",
+    "groupId": "232865",
+    "isSecure": false,
+    "propertyId": 907850,
+    "latestVersionInfo": {
+        "propertyVersion": 2,
+        "updatedByUser": "zwjvzrkxya7eabvj",
+        "updatedDate": "2023-04-05T05:02:05Z",
+        "productionStatus": "INACTIVE",
+        "stagingStatus": "ACTIVE",
+        "productId": "prd_Fresca",
+        "ruleFormat": "v2023-01-05"
+    },
+    "suggestedRuleFormat": "v2023-01-05",
+    "environmentHash": "6884f03abb29b34d6b97d48eed5ebe7e05abefd3f1b1d8c9df4b5d2f96508849",
+    "ruleTreeHash": "6d14d8408e902b96d090dd59b79af4c83ab36d1e74c6e0845a313d321f73a338",
+    "lastSavedHash": "6884f03abb29b34d6b97d48eed5ebe7e05abefd3f1b1d8c9df4b5d2f96508849",
+    "lastValidatedHash": "6884f03abb29b34d6b97d48eed5ebe7e05abefd3f1b1d8c9df4b5d2f96508849",
+    "lastSaveWarnings": [
+        {
+            "type": "https://problems.luna.akamaiapis.net/papi/v0/validation/validation_message.general_warning",
+            "errorLocation": {
+                "template": "config-snippets/Augment_insights.json",
+                "variables": [],
+                "location": "children/2/criteria/0",
+                "value": {
+                    "name": "requestType",
+                    "options": {
+                        "matchOperator": "IS",
+                        "value": "CLIENT_REQ"
+                    }
+                }
+            },
+            "detail": "Matching on `Request Type` requires thorough understanding of the way Akamai Edge servers process requests.  If you are unsure about how this will affect your property, please contact your Akamai Technical representative, and please test thoroughly on staging before activating on production."
+        },
+        {
+            "type": "https://problems.luna.akamaiapis.net/papi/v0/validation/need_feature",
+            "errorLocation": {
+                "template": "config-snippets/Strengthen_security.json",
+                "variables": [],
+                "location": "children/3/behaviors/0",
+                "value": {
+                    "name": "httpStrictTransportSecurity",
+                    "options": {
+                        "enable": false
+                    }
+                }
+            },
+            "detail": "Enabling preload makes future downgrade to HTTP difficult."
+        }
+    ],
+    "lastSaveErrors": [],
+    "lastSaveHostnameErrors": [],
+    "lastSaveHostnameWarnings": [],
+    "lastSavedHostnamesHash": "56b4910e7baf9534dd23d54f8b07aee04dc68835a0890783f2f5bcd2cf2d6ab6",
+    "activeIn_STAGING_Info": {
+        "propertyVersion": 2,
+        "updatedByUser": "zwjvzrkxya7eabvj",
+        "updatedDate": "2023-04-05T05:02:05Z",
+        "productionStatus": "INACTIVE",
+        "stagingStatus": "ACTIVE",
+        "etag": "1ef523cdd8cc3a1e74c67e0141711640b968b3dd",
+        "productId": "prd_Fresca",
+        "ruleFormat": "v2023-01-05"
+    }
+}

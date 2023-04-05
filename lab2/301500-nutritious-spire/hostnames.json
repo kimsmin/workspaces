@@ -1,0 +1,9 @@
+[
+    {
+        "cnameType": "EDGE_HOSTNAME",
+        "edgeHostnameId": 5321956,
+        "cnameFrom": "301500-nutritious-spire",
+        "cnameTo": "301500-nutritious-spire.edgesuite.net",
+        "certProvisioningType": "CPS_MANAGED"
+    }
+]

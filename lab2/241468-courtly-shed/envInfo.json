@@ -1,0 +1,17 @@
+{
+    "name": "241468-courtly-shed",
+    "propertyName": "241468-courtly-shed",
+    "groupId": "232865",
+    "isSecure": false,
+    "propertyId": 907811,
+    "latestVersionInfo": {
+        "propertyVersion": 1,
+        "updatedByUser": "zwjvzrkxya7eabvj",
+        "updatedDate": "2023-04-05T02:56:10Z",
+        "productionStatus": "INACTIVE",
+        "stagingStatus": "INACTIVE",
+        "productId": "prd_Fresca",
+        "ruleFormat": "v2023-01-05"
+    },
+    "suggestedRuleFormat": "v2023-01-05"
+}

@@ -1,0 +1,43 @@
+{
+  "accountId": "act_F-AC-4917414",
+  "contractId": "ctr_V-41DUHPB",
+  "groupId": "grp_232865",
+  "propertyId": "prp_906976",
+  "propertyVersion": 1,
+  "etag": "de5194ad53e2dd237ad737ff96a402297d40ac3e",
+  "ruleFormat": "latest",
+  "rules": {
+    "name": "default",
+    "behaviors": [
+      {
+        "name": "origin",
+        "options": {
+          "cacheKeyHostname": "REQUEST_HOST_HEADER",
+          "compress": true,
+          "enableTrueClientIp": true,
+          "forwardHostHeader": "REQUEST_HOST_HEADER",
+          "hostname": "origin--main--20230403063219--a.b.akamai-lab.com",
+          "httpPort": 80,
+          "httpsPort": 443,
+          "originCertificate": "",
+          "originSni": true,
+          "originType": "CUSTOMER",
+          "ports": "",
+          "trueClientIpClientSetting": false,
+          "trueClientIpHeader": "True-Client-IP",
+          "verificationMode": "PLATFORM_SETTINGS"
+        }
+      }
+    ],
+    "children": [
+      "#include:Augment_insights.json",
+      "#include:Accelerate_delivery.json",
+      "#include:Offload_origin.json",
+      "#include:Strengthen_security.json",
+      "#include:Increase_availability.json",
+      "#include:Minimize_payload.json"
+    ],
+    "comments": "The Default Rule template contains all the necessary and recommended behaviors. Rules are evaluated from top to bottom and the last matching rule wins.",
+    "options": {}
+  }
+}

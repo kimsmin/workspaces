@@ -1,0 +1,21 @@
+2023-04-23 10:34:32 1212515 akamai-onboard.py 305 INFO: Start Akamai CLI onboard
+2023-04-23 10:34:32 1212515 akamai-onboard.py 741 INFO: Successfully read ./single.json
+2023-04-23 10:34:32 1212515 utility.py        861 INFO: Rule Template Location: /home/akamai/.akamai-cli/src/cli-onboard/templates/akamai_product_templates/prd_Fresca.json
+2023-04-23 10:34:34 1212515 utility.py        293 WARNING: Validating setup file information. Please wait, may take a few moments
+2023-04-23 10:34:35 1212515 utility.py        300 INFO: onboard.akamai-lab.com                            valid property name
+2023-04-23 10:34:36 1212515 utility.py        354 INFO: prd_Fresca                                        valid product_id
+2023-04-23 10:34:36 1212515 utility.py        355 INFO:                                                   valid group_id
+2023-04-23 10:34:36 1212515 utility.py        356 INFO: ctr_V-41DUHPB                                     valid contract_id
+2023-04-23 10:34:36 1212515 utility.py        375 INFO: use_existing_edgehostname                         edge hostname mode
+2023-04-23 10:34:36 1212515 utility.py        390 INFO: ehn_5320465                                       valid edge_hostname_id
+2023-04-23 10:34:36 1212515 utility.py        391 INFO: lab2.edgesuite.net                                valid edge hostname
+2023-04-23 10:34:36 1212515 utility.py        392 INFO: onboard.akamai-lab.com                            valid public hostname
+2023-04-23 10:34:36 1212515 utility.py        570 WARNING: Onboarding Delivery Config
+2023-04-23 10:34:36 1212515 utility_papi.py   106 ERROR: {
+    "type": "https://problems.luna.akamaiapis.net/papi/v0/missing-required-parameter",
+    "title": "Missing required parameter",
+    "detail": "Missing required parameter `groupId`.",
+    "instance": "https://akab-omo2alokxehw6u75-g5fsb3ceydj7ikva.luna.akamaiapis.net/papi/v1/cpcodes?contractId=ctr_V-41DUHPB&groupId=#c627642d4ebc0d3c",
+    "status": 400
+}
+2023-04-23 10:34:36 1212515 utility_papi.py   107 ERROR: Unable to create new cpcode
