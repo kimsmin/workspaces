@@ -1,0 +1,37 @@
+{
+    "name": "test3.akamai-lab.com",
+    "propertyId": 817663,
+    "propertyName": "test3.akamai-lab.com",
+    "groupId": 209786,
+    "isSecure": false,
+    "latestVersionInfo": {
+        "propertyVersion": 2,
+        "updatedByUser": "sangminkimkr@protonmail.com",
+        "updatedDate": "2022-07-19T06:52:54Z",
+        "productionStatus": "INACTIVE",
+        "stagingStatus": "INACTIVE",
+        "etag": "822c1cfa3e81e31ebb794e5e2e0541d7b124a9c9",
+        "productId": "prd_Fresca",
+        "ruleFormat": "latest"
+    },
+    "activeIn_STAGING_Info": {
+        "propertyVersion": 1,
+        "updatedByUser": "sangminkimkr@protonmail.com",
+        "updatedDate": "2022-07-19T06:51:27Z",
+        "productionStatus": "ACTIVE",
+        "stagingStatus": "ACTIVE",
+        "etag": "e86f3bff607c1dbdfdfda2fcdad14f28479e5dd0",
+        "productId": "prd_Fresca",
+        "ruleFormat": "latest"
+    },
+    "activeIn_PRODUCTION_Info": {
+        "propertyVersion": 1,
+        "updatedByUser": "sangminkimkr@protonmail.com",
+        "updatedDate": "2022-07-19T06:51:27Z",
+        "productionStatus": "ACTIVE",
+        "stagingStatus": "ACTIVE",
+        "etag": "e86f3bff607c1dbdfdfda2fcdad14f28479e5dd0",
+        "productId": "prd_Fresca",
+        "ruleFormat": "latest"
+    }
+}

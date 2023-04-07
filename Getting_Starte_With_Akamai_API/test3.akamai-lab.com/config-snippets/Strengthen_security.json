@@ -1,0 +1,161 @@
+{
+    "name": "Strengthen security",
+    "children": [
+        {
+            "name": "Allowed methods",
+            "children": [
+                {
+                    "name": "POST",
+                    "children": [],
+                    "behaviors": [
+                        {
+                            "name": "allowPost",
+                            "options": {
+                                "allowWithoutContentLength": false,
+                                "enabled": true
+                            }
+                        }
+                    ],
+                    "criteria": [],
+                    "criteriaMustSatisfy": "all"
+                },
+                {
+                    "name": "OPTIONS",
+                    "children": [],
+                    "behaviors": [
+                        {
+                            "name": "allowOptions",
+                            "options": {
+                                "enabled": true
+                            }
+                        }
+                    ],
+                    "criteria": [],
+                    "criteriaMustSatisfy": "all"
+                },
+                {
+                    "name": "PUT",
+                    "children": [],
+                    "behaviors": [
+                        {
+                            "name": "allowPut",
+                            "options": {
+                                "enabled": true
+                            }
+                        }
+                    ],
+                    "criteria": [],
+                    "criteriaMustSatisfy": "all"
+                },
+                {
+                    "name": "DELETE",
+                    "children": [],
+                    "behaviors": [
+                        {
+                            "name": "allowDelete",
+                            "options": {
+                                "enabled": true,
+                                "allowBody": false
+                            }
+                        }
+                    ],
+                    "criteria": [],
+                    "criteriaMustSatisfy": "all"
+                },
+                {
+                    "name": "PATCH",
+                    "children": [],
+                    "behaviors": [
+                        {
+                            "name": "allowPatch",
+                            "options": {
+                                "enabled": true
+                            }
+                        }
+                    ],
+                    "criteria": [],
+                    "criteriaMustSatisfy": "all"
+                }
+            ],
+            "behaviors": [
+                {
+                    "name": "allHttpInCacheHierarchy",
+                    "options": {
+                        "enabled": true
+                    }
+                }
+            ],
+            "criteria": [],
+            "criteriaMustSatisfy": "all"
+        },
+        {
+            "name": "Obfuscate debug info",
+            "children": [],
+            "behaviors": [
+                {
+                    "name": "cacheTagVisible",
+                    "options": {
+                        "behavior": "PRAGMA_HEADER"
+                    }
+                }
+            ],
+            "criteria": [],
+            "criteriaMustSatisfy": "all"
+        },
+        {
+            "name": "Obfuscate backend info",
+            "children": [],
+            "behaviors": [
+                {
+                    "name": "modifyOutgoingResponseHeader",
+                    "options": {
+                        "action": "DELETE",
+                        "standardDeleteHeaderName": "OTHER",
+                        "customHeaderName": "X-Powered-By"
+                    }
+                },
+                {
+                    "name": "modifyOutgoingResponseHeader",
+                    "options": {
+                        "action": "DELETE",
+                        "standardDeleteHeaderName": "OTHER",
+                        "customHeaderName": "Server"
+                    }
+                }
+            ],
+            "criteria": [
+                {
+                    "name": "requestHeader",
+                    "options": {
+                        "headerName": "X-Akamai-Debug",
+                        "matchCaseSensitiveValue": true,
+                        "matchOperator": "IS_NOT_ONE_OF",
+                        "matchWildcardName": false,
+                        "matchWildcardValue": false,
+                        "values": [
+                            "true"
+                        ]
+                    }
+                }
+            ],
+            "criteriaMustSatisfy": "all"
+        },
+        {
+            "name": "HSTS",
+            "children": [],
+            "behaviors": [
+                {
+                    "name": "httpStrictTransportSecurity",
+                    "options": {
+                        "enable": false
+                    }
+                }
+            ],
+            "criteria": [],
+            "criteriaMustSatisfy": "all"
+        }
+    ],
+    "behaviors": [],
+    "criteria": [],
+    "criteriaMustSatisfy": "all"
+}

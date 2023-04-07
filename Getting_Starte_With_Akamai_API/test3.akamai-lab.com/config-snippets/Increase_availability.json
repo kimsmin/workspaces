@@ -1,0 +1,88 @@
+{
+    "name": "Increase availability",
+    "children": [
+        {
+            "name": "Simulate failover",
+            "children": [],
+            "behaviors": [
+                {
+                    "name": "breakConnection",
+                    "options": {
+                        "enabled": true
+                    }
+                }
+            ],
+            "criteria": [
+                {
+                    "name": "contentDeliveryNetwork",
+                    "options": {
+                        "matchOperator": "IS",
+                        "network": "STAGING"
+                    }
+                },
+                {
+                    "name": "requestHeader",
+                    "options": {
+                        "headerName": "breakconnection",
+                        "matchOperator": "IS_ONE_OF",
+                        "values": [
+                            "Your-Secret-Here"
+                        ],
+                        "matchWildcardName": false,
+                        "matchWildcardValue": false,
+                        "matchCaseSensitiveValue": true
+                    }
+                }
+            ],
+            "criteriaMustSatisfy": "all"
+        },
+        {
+            "name": "Site failover",
+            "children": [],
+            "behaviors": [
+                {
+                    "name": "failAction",
+                    "options": {
+                        "enabled": false
+                    }
+                }
+            ],
+            "criteria": [
+                {
+                    "name": "originTimeout",
+                    "options": {
+                        "matchOperator": "ORIGIN_TIMED_OUT"
+                    }
+                }
+            ],
+            "criteriaMustSatisfy": "all"
+        },
+        {
+            "name": "Origin health",
+            "children": [],
+            "behaviors": [
+                {
+                    "name": "healthDetection",
+                    "options": {
+                        "retryCount": 3,
+                        "retryInterval": "10s",
+                        "maximumReconnects": 3
+                    }
+                }
+            ],
+            "criteria": [],
+            "criteriaMustSatisfy": "all"
+        }
+    ],
+    "behaviors": [
+        {
+            "name": "scriptManagement",
+            "options": {
+                "enabled": true,
+                "serviceworker": "NO_SERVICE_WORKER"
+            }
+        }
+    ],
+    "criteria": [],
+    "criteriaMustSatisfy": "all"
+}

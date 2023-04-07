@@ -1,0 +1,9 @@
+[
+    {
+        "cnameType": "EDGE_HOSTNAME",
+        "edgeHostnameId": 5158017,
+        "cnameFrom": "test3.akamai-lab.com",
+        "cnameTo": "test3.akamai-lab.com.edgesuite.net",
+        "certProvisioningType": "CPS_MANAGED"
+    }
+]

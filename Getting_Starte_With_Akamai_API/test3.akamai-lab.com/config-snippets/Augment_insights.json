@@ -1,0 +1,87 @@
+{
+    "name": "Augment insights",
+    "children": [
+        {
+            "name": "Traffic reporting",
+            "children": [],
+            "behaviors": [
+                {
+                    "name": "cpCode",
+                    "options": {
+                        "value": {
+                            "id": 1355447
+                        }
+                    }
+                }
+            ],
+            "criteria": [],
+            "criteriaMustSatisfy": "all"
+        },
+        {
+            "name": "mPulse RUM",
+            "children": [],
+            "behaviors": [
+                {
+                    "name": "mPulse",
+                    "options": {
+                        "enabled": true,
+                        "apiKey": "",
+                        "bufferSize": "",
+                        "configOverride": "",
+                        "requirePci": false,
+                        "titleOptional": "",
+                        "loaderVersion": "V10"
+                    }
+                }
+            ],
+            "criteria": [],
+            "criteriaMustSatisfy": "all"
+        },
+        {
+            "name": "Geolocation",
+            "children": [],
+            "behaviors": [
+                {
+                    "name": "edgeScape",
+                    "options": {
+                        "enabled": false
+                    }
+                }
+            ],
+            "criteria": [
+                {
+                    "name": "requestType",
+                    "options": {
+                        "matchOperator": "IS",
+                        "value": "CLIENT_REQ"
+                    }
+                }
+            ],
+            "criteriaMustSatisfy": "all"
+        },
+        {
+            "name": "Log delivery",
+            "children": [],
+            "behaviors": [
+                {
+                    "name": "report",
+                    "options": {
+                        "logHost": false,
+                        "logReferer": false,
+                        "logUserAgent": false,
+                        "logAcceptLanguage": false,
+                        "logCookies": "OFF",
+                        "logCustomLogField": false,
+                        "logEdgeIP": false,
+                        "logXForwardedFor": false
+                    }
+                }
+            ],
+            "criteria": [],
+            "criteriaMustSatisfy": "all"
+        }
+    ],
+    "behaviors": [],
+    "criteria": [],
+    "criteriaMustSatisfy": "all"
+}

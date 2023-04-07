@@ -1,0 +1,11 @@
+{
+    "productId": "Fresca",
+    "contractId": "V-41DUHPB",
+    "groupId": 209786,
+    "version": "0.7.8-RELEASE",
+    "isSecure": false,
+    "edgeGridConfig": {
+        "section": "papi"
+    },
+    "name": "test3.akamai-lab.com"
+}

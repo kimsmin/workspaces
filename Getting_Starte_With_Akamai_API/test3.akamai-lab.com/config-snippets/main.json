@@ -1,0 +1,37 @@
+{
+    "rules": {
+        "name": "default",
+        "children": [
+            "#include:Standard_TLS_Auto_DV.json",
+            "#include:Augment_insights.json",
+            "#include:Accelerate_delivery.json",
+            "#include:Offload_origin.json",
+            "#include:Strengthen_security.json",
+            "#include:Increase_availability.json",
+            "#include:Minimize_payload.json"
+        ],
+        "behaviors": [
+            {
+                "name": "origin",
+                "options": {
+                    "cacheKeyHostname": "REQUEST_HOST_HEADER",
+                    "compress": true,
+                    "enableTrueClientIp": true,
+                    "trueClientIpHeader": "True-Client-IP",
+                    "trueClientIpClientSetting": false,
+                    "forwardHostHeader": "REQUEST_HOST_HEADER",
+                    "hostname": "172-104-112-133.ip.linodeusercontent.com",
+                    "httpPort": 80,
+                    "httpsPort": 443,
+                    "originSni": true,
+                    "verificationMode": "PLATFORM_SETTINGS",
+                    "originType": "CUSTOMER",
+                    "useUniqueCacheKey": false
+                }
+            }
+        ],
+        "options": {
+            "is_secure": false
+        }
+    }
+}

@@ -1,0 +1,186 @@
+{
+    "name": "Accelerate delivery",
+    "children": [
+        {
+            "name": "Origin connectivity",
+            "children": [],
+            "behaviors": [
+                {
+                    "name": "dnsAsyncRefresh",
+                    "options": {
+                        "enabled": true,
+                        "timeout": "1h"
+                    }
+                },
+                {
+                    "name": "timeout",
+                    "options": {
+                        "value": "5s"
+                    }
+                },
+                {
+                    "name": "readTimeout",
+                    "options": {
+                        "value": "120s"
+                    }
+                }
+            ],
+            "criteria": [],
+            "criteriaMustSatisfy": "all"
+        },
+        {
+            "name": "Protocol Optimizations",
+            "children": [],
+            "behaviors": [
+                {
+                    "name": "enhancedAkamaiProtocol",
+                    "options": {
+                        "display": ""
+                    }
+                },
+                {
+                    "name": "http2",
+                    "options": {
+                        "enabled": ""
+                    }
+                },
+                {
+                    "name": "allowTransferEncoding",
+                    "options": {
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "sureRoute",
+                    "options": {
+                        "enabled": true,
+                        "type": "PERFORMANCE",
+                        "testObjectUrl": "/favicon.ico",
+                        "forceSslForward": false,
+                        "enableCustomKey": false,
+                        "raceStatTtl": "30m",
+                        "toHostStatus": "INCOMING_HH"
+                    }
+                }
+            ],
+            "criteria": [],
+            "criteriaMustSatisfy": "all"
+        },
+        {
+            "name": "Prefetching",
+            "children": [
+                {
+                    "name": "Prefetching objects",
+                    "children": [
+                        {
+                            "name": "Bots",
+                            "children": [],
+                            "behaviors": [
+                                {
+                                    "name": "prefetch",
+                                    "options": {
+                                        "enabled": false
+                                    }
+                                }
+                            ],
+                            "criteria": [
+                                {
+                                    "name": "userAgent",
+                                    "options": {
+                                        "matchOperator": "IS_ONE_OF",
+                                        "values": [
+                                            "*bot*",
+                                            "*crawl*",
+                                            "*spider*"
+                                        ],
+                                        "matchWildcard": true,
+                                        "matchCaseSensitive": false
+                                    }
+                                }
+                            ],
+                            "criteriaMustSatisfy": "all"
+                        }
+                    ],
+                    "behaviors": [
+                        {
+                            "name": "prefetch",
+                            "options": {
+                                "enabled": true
+                            }
+                        }
+                    ],
+                    "criteria": [],
+                    "criteriaMustSatisfy": "all"
+                },
+                {
+                    "name": "Prefetchable objects",
+                    "children": [],
+                    "behaviors": [
+                        {
+                            "name": "prefetchable",
+                            "options": {
+                                "enabled": true
+                            }
+                        }
+                    ],
+                    "criteria": [
+                        {
+                            "name": "fileExtension",
+                            "options": {
+                                "matchOperator": "IS_ONE_OF",
+                                "values": [
+                                    "css",
+                                    "js",
+                                    "jpg",
+                                    "jpeg",
+                                    "jp2",
+                                    "png",
+                                    "gif",
+                                    "svg",
+                                    "svgz",
+                                    "webp",
+                                    "eot",
+                                    "woff",
+                                    "woff2",
+                                    "otf",
+                                    "ttf"
+                                ],
+                                "matchCaseSensitive": false
+                            }
+                        }
+                    ],
+                    "criteriaMustSatisfy": "all"
+                }
+            ],
+            "behaviors": [],
+            "criteria": [],
+            "criteriaMustSatisfy": "all"
+        },
+        {
+            "name": "Adaptive acceleration",
+            "children": [],
+            "behaviors": [
+                {
+                    "name": "adaptiveAcceleration",
+                    "options": {
+                        "source": "mPulse",
+                        "titleHttp2ServerPush": "",
+                        "enablePush": true,
+                        "titlePreconnect": "",
+                        "enablePreconnect": true,
+                        "titlePreload": "",
+                        "preloadEnable": true,
+                        "titleRo": "",
+                        "enableRo": true,
+                        "abLogic": "DISABLED"
+                    }
+                }
+            ],
+            "criteria": [],
+            "criteriaMustSatisfy": "all"
+        }
+    ],
+    "behaviors": [],
+    "criteria": [],
+    "criteriaMustSatisfy": "all"
+}
