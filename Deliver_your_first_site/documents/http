@@ -1,0 +1,6 @@
+payload = {
+    "domainPrefix": 41616-ecru-frisbee,
+    "domainSuffix": "edgesuite.net",
+    "ipVersionBehavior": "IPV6_COMPLIANCE",
+    "productId": "prd_Fresca"
+} --auth-type edgegrid -pHhBb -a default: :/papi/v1/edgehostnames

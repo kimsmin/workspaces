@@ -1,0 +1,1203 @@
+[2023-04-11T12:08:50.670] [INFO] devops-prov.factory - Switching account key to: 'undefined'
+[2023-04-11T12:10:28.308] [INFO] devops-prov.factory - Switching account key to: 'undefined'
+[2023-04-11T12:10:28.309] [INFO] devops-prov.factory - Using credentials file: '/home/coder/workspaces/Deliver_your_first_site/documents/edgerc.config', section: 'papi'
+[2023-04-11T12:10:28.310] [INFO] devops-prov.factory - need to create papi
+[2023-04-11T12:10:28.311] [INFO] devops-prov.openclient - Requesting: GET /papi/v1/contracts
+[2023-04-11T12:10:28.314] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-cgz222otun2ovd6z-qrezmmoqwijxzbzh;access_token=akab-tspktyudtkthiblu-6pedlonweipq5jpp;timestamp=20230411T12:10:28+0000;nonce=090b6e4f-b767-4ce8-b9e0-f3a8df75679d;
+
+[2023-04-11T12:10:28.315] [INFO] devops-prov.edgegrid.helpers - Body is ""
+[2023-04-11T12:10:28.315] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 0
+[2023-04-11T12:10:28.315] [INFO] devops-prov.edgegrid.helpers - Data to sign: "GET	https	akab-iateral64b7q2mtp-uhlpwx747q6d5hsk.luna.akamaiapis.net	/papi/v1/contracts			EG1-HMAC-SHA256 client_token=akab-cgz222otun2ovd6z-qrezmmoqwijxzbzh;access_token=akab-tspktyudtkthiblu-6pedlonweipq5jpp;timestamp=20230411T12:10:28+0000;nonce=090b6e4f-b767-4ce8-b9e0-f3a8df75679d;" 
+
+[2023-04-11T12:10:28.316] [INFO] devops-prov.edgegrid.helpers - Signing key: y2IzbKj9YUJfZBNGAUzZlRJPapkibWEpV6ZII+uTR/w=
+
+[2023-04-11T12:10:28.316] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-cgz222otun2ovd6z-qrezmmoqwijxzbzh;access_token=akab-tspktyudtkthiblu-6pedlonweipq5jpp;timestamp=20230411T12:10:28+0000;nonce=090b6e4f-b767-4ce8-b9e0-f3a8df75679d;signature=YDn2cxEHVt7svoFNUPTXqD5wdlI/huWSFxKnzzsiiIE=
+
+[2023-04-11T12:10:28.335] [INFO] devops-prov.edgegrid - request {
+  debugId: 1,
+  uri: 'https://akab-iateral64b7q2mtp-uhlpwx747q6d5hsk.luna.akamaiapis.net/papi/v1/contracts',
+  method: 'GET',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-cgz222otun2ovd6z-qrezmmoqwijxzbzh;access_token=akab-tspktyudtkthiblu-6pedlonweipq5jpp;timestamp=20230411T12:10:28+0000;nonce=090b6e4f-b767-4ce8-b9e0-f3a8df75679d;signature=YDn2cxEHVt7svoFNUPTXqD5wdlI/huWSFxKnzzsiiIE=',
+    host: 'akab-iateral64b7q2mtp-uhlpwx747q6d5hsk.luna.akamaiapis.net'
+  }
+}
+[2023-04-11T12:10:28.718] [INFO] devops-prov.edgegrid - response {
+  debugId: 1,
+  headers: {
+    'content-length': '406',
+    date: 'Tue, 11 Apr 2023 12:10:28 GMT',
+    connection: 'close',
+    'www-authenticate': 'EG1-HMAC-SHA256 realm="akab-iateral64b7q2mtp-uhlpwx747q6d5hsk.luna.akamaiapis.net"',
+    'content-type': 'application/problem+json'
+  },
+  statusCode: 401,
+  body: '{\n' +
+    '  "type": "https://problems.luna.akamaiapis.net/-/pep-authn/deny",\n' +
+    '  "title": "Not authorized",\n' +
+    '  "status": 401,\n' +
+    '  "detail": "Inactive client token",\n' +
+    '  "instance": "https://akab-iateral64b7q2mtp-uhlpwx747q6d5hsk.luna.akamaiapis.net/papi/v1/contracts",\n' +
+    '  "method": "GET",\n' +
+    '  "serverIp": "23.194.89.194",\n' +
+    '  "clientIp": "172.105.203.185",\n' +
+    '  "requestId": "70551070",\n' +
+    '  "requestTime": "2023-04-11T12:10:28Z"\n' +
+    '}\n'
+}
+[2023-04-11T12:10:28.718] [ERROR] devops-prov.openclient - request failure, status code: '401', response body:  {
+  "type": "https://problems.luna.akamaiapis.net/-/pep-authn/deny",
+  "title": "Not authorized",
+  "status": 401,
+  "detail": "Inactive client token",
+  "instance": "https://akab-iateral64b7q2mtp-uhlpwx747q6d5hsk.luna.akamaiapis.net/papi/v1/contracts",
+  "method": "GET",
+  "serverIp": "23.194.89.194",
+  "clientIp": "172.105.203.185",
+  "requestId": "70551070",
+  "requestTime": "2023-04-11T12:10:28Z"
+}
+
+[2023-04-11T12:13:06.783] [INFO] devops-prov.factory - Switching account key to: 'undefined'
+[2023-04-11T12:13:06.785] [INFO] devops-prov.factory - Using credentials file: '/home/coder/workspaces/Deliver_your_first_site/documents/edgerc.config', section: 'papi'
+[2023-04-11T12:13:06.785] [INFO] devops-prov.factory - need to create papi
+[2023-04-11T12:13:06.786] [INFO] devops-prov.openclient - Requesting: GET /papi/v1/contracts
+[2023-04-11T12:13:06.790] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-y6igvh7v5yk3c5c5-52jufhxsrppcdnlx;access_token=akab-tspktyudtkthiblu-6pedlonweipq5jpp;timestamp=20230411T12:13:06+0000;nonce=a0ccb258-0292-4a60-a19c-d3e0f5afc580;
+
+[2023-04-11T12:13:06.790] [INFO] devops-prov.edgegrid.helpers - Body is ""
+[2023-04-11T12:13:06.790] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 0
+[2023-04-11T12:13:06.791] [INFO] devops-prov.edgegrid.helpers - Data to sign: "GET	https	akab-iateral64b7q2mtp-uhlpwx747q6d5hsk.luna.akamaiapis.net	/papi/v1/contracts			EG1-HMAC-SHA256 client_token=akab-y6igvh7v5yk3c5c5-52jufhxsrppcdnlx;access_token=akab-tspktyudtkthiblu-6pedlonweipq5jpp;timestamp=20230411T12:13:06+0000;nonce=a0ccb258-0292-4a60-a19c-d3e0f5afc580;" 
+
+[2023-04-11T12:13:06.791] [INFO] devops-prov.edgegrid.helpers - Signing key: uowG4vVuJ1WfHZPQ3KFf5BFfvBLBDpVPtQ1MN2qmPWM=
+
+[2023-04-11T12:13:06.791] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-y6igvh7v5yk3c5c5-52jufhxsrppcdnlx;access_token=akab-tspktyudtkthiblu-6pedlonweipq5jpp;timestamp=20230411T12:13:06+0000;nonce=a0ccb258-0292-4a60-a19c-d3e0f5afc580;signature=lIAI+mrNB1UaVKia/wbN7gLm9pIdGEKsiS9/OVJl9xU=
+
+[2023-04-11T12:13:06.808] [INFO] devops-prov.edgegrid - request {
+  debugId: 1,
+  uri: 'https://akab-iateral64b7q2mtp-uhlpwx747q6d5hsk.luna.akamaiapis.net/papi/v1/contracts',
+  method: 'GET',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-y6igvh7v5yk3c5c5-52jufhxsrppcdnlx;access_token=akab-tspktyudtkthiblu-6pedlonweipq5jpp;timestamp=20230411T12:13:06+0000;nonce=a0ccb258-0292-4a60-a19c-d3e0f5afc580;signature=lIAI+mrNB1UaVKia/wbN7gLm9pIdGEKsiS9/OVJl9xU=',
+    host: 'akab-iateral64b7q2mtp-uhlpwx747q6d5hsk.luna.akamaiapis.net'
+  }
+}
+[2023-04-11T12:13:07.815] [INFO] devops-prov.edgegrid - response {
+  debugId: 1,
+  headers: {
+    server: 'nginx',
+    'content-type': 'application/json;charset=UTF-8',
+    'x-ids-session-id': '870ce93f-087e-459f-bc2a-3a833ebc5b43, 870ce93f-087e-459f-bc2a-3a833ebc5b43',
+    'papi-cache-status': 'CACHE_MISS',
+    link: '<https://akab-iateral64b7q2mtp-uhlpwx747q6d5hsk.luna.akamaiapis.net/papi/v1/v0/schemas/request/GetContractResponse.json>; rel="describedby"',
+    'cache-control': 'no-store',
+    vary: 'accept-encoding',
+    'x-trace-id': 'ecf664354ed3b57c',
+    'content-length': '170',
+    date: 'Tue, 11 Apr 2023 12:13:07 GMT',
+    connection: 'keep-alive'
+  },
+  statusCode: 200,
+  body: '{\n' +
+    '  "accountId" : "act_F-AC-4917414",\n' +
+    '  "contracts" : {\n' +
+    '    "items" : [ {\n' +
+    '      "contractId" : "ctr_V-41DUHPB",\n' +
+    '      "contractTypeName" : "DIRECT_CUSTOMER"\n' +
+    '    } ]\n' +
+    '  }\n' +
+    '}'
+}
+[2023-04-11T12:13:07.816] [INFO] devops-prov.openclient - Status code:  200
+[2023-04-11T12:13:07.816] [INFO] devops-prov.openclient - Body:  {
+  "accountId" : "act_F-AC-4917414",
+  "contracts" : {
+    "items" : [ {
+      "contractId" : "ctr_V-41DUHPB",
+      "contractTypeName" : "DIRECT_CUSTOMER"
+    } ]
+  }
+}
+[2023-04-11T12:32:23.145] [INFO] devops-prov.factory - Switching account key to: 'undefined'
+[2023-04-11T12:32:23.147] [INFO] devops-prov.factory - Using credentials file: '/home/coder/workspaces/Deliver_your_first_site/documents/edgerc.config', section: 'papi'
+[2023-04-11T12:32:23.147] [INFO] devops-prov.factory - need to create papi
+[2023-04-11T12:32:23.148] [INFO] devops-prov.openclient - Requesting: GET /papi/v1/contracts
+[2023-04-11T12:32:23.151] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-y6igvh7v5yk3c5c5-52jufhxsrppcdnlx;access_token=akab-tspktyudtkthiblu-6pedlonweipq5jpp;timestamp=20230411T12:32:23+0000;nonce=79900356-871b-49ff-b831-d0855305612b;
+
+[2023-04-11T12:32:23.152] [INFO] devops-prov.edgegrid.helpers - Body is ""
+[2023-04-11T12:32:23.152] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 0
+[2023-04-11T12:32:23.152] [INFO] devops-prov.edgegrid.helpers - Data to sign: "GET	https	akab-iateral64b7q2mtp-uhlpwx747q6d5hsk.luna.akamaiapis.net	/papi/v1/contracts			EG1-HMAC-SHA256 client_token=akab-y6igvh7v5yk3c5c5-52jufhxsrppcdnlx;access_token=akab-tspktyudtkthiblu-6pedlonweipq5jpp;timestamp=20230411T12:32:23+0000;nonce=79900356-871b-49ff-b831-d0855305612b;" 
+
+[2023-04-11T12:32:23.153] [INFO] devops-prov.edgegrid.helpers - Signing key: 6bDqy/R6PUhjWxP0eBsqqkNugwTGd2dTVLl7D6XRq5g=
+
+[2023-04-11T12:32:23.153] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-y6igvh7v5yk3c5c5-52jufhxsrppcdnlx;access_token=akab-tspktyudtkthiblu-6pedlonweipq5jpp;timestamp=20230411T12:32:23+0000;nonce=79900356-871b-49ff-b831-d0855305612b;signature=nBWizOridTXHcrxEg45K2fZQSW5dy1nvIDHIp/VrXl4=
+
+[2023-04-11T12:32:23.169] [INFO] devops-prov.edgegrid - request {
+  debugId: 1,
+  uri: 'https://akab-iateral64b7q2mtp-uhlpwx747q6d5hsk.luna.akamaiapis.net/papi/v1/contracts',
+  method: 'GET',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-y6igvh7v5yk3c5c5-52jufhxsrppcdnlx;access_token=akab-tspktyudtkthiblu-6pedlonweipq5jpp;timestamp=20230411T12:32:23+0000;nonce=79900356-871b-49ff-b831-d0855305612b;signature=nBWizOridTXHcrxEg45K2fZQSW5dy1nvIDHIp/VrXl4=',
+    host: 'akab-iateral64b7q2mtp-uhlpwx747q6d5hsk.luna.akamaiapis.net'
+  }
+}
+[2023-04-11T12:32:24.194] [INFO] devops-prov.edgegrid - response {
+  debugId: 1,
+  headers: {
+    server: 'nginx',
+    'content-type': 'application/json;charset=UTF-8',
+    'x-ids-session-id': 'ecd75c7c-1bf7-4622-82e0-771a51cca2d3, ecd75c7c-1bf7-4622-82e0-771a51cca2d3',
+    'papi-cache-status': 'CACHE_MISS',
+    link: '<https://akab-iateral64b7q2mtp-uhlpwx747q6d5hsk.luna.akamaiapis.net/papi/v1/v0/schemas/request/GetContractResponse.json>; rel="describedby"',
+    'cache-control': 'no-store',
+    vary: 'accept-encoding',
+    'x-trace-id': 'dd7864355357c61e',
+    'content-length': '170',
+    date: 'Tue, 11 Apr 2023 12:32:24 GMT',
+    connection: 'keep-alive'
+  },
+  statusCode: 200,
+  body: '{\n' +
+    '  "accountId" : "act_F-AC-4917414",\n' +
+    '  "contracts" : {\n' +
+    '    "items" : [ {\n' +
+    '      "contractId" : "ctr_V-41DUHPB",\n' +
+    '      "contractTypeName" : "DIRECT_CUSTOMER"\n' +
+    '    } ]\n' +
+    '  }\n' +
+    '}'
+}
+[2023-04-11T12:32:24.195] [INFO] devops-prov.openclient - Status code:  200
+[2023-04-11T12:32:24.195] [INFO] devops-prov.openclient - Body:  {
+  "accountId" : "act_F-AC-4917414",
+  "contracts" : {
+    "items" : [ {
+      "contractId" : "ctr_V-41DUHPB",
+      "contractTypeName" : "DIRECT_CUSTOMER"
+    } ]
+  }
+}
+[2023-04-11T12:38:27.407] [INFO] devops-prov.factory - Switching account key to: 'undefined'
+[2023-04-11T12:38:27.409] [INFO] devops-prov.factory - Using credentials file: '/home/coder/workspaces/Deliver_your_first_site/documents/edgerc.config', section: 'papi'
+[2023-04-11T12:38:35.315] [INFO] devops-prov.factory - Switching account key to: 'undefined'
+[2023-04-11T12:38:35.317] [INFO] devops-prov.factory - Using credentials file: '/home/coder/workspaces/Deliver_your_first_site/documents/edgerc.config', section: 'papi'
+[2023-04-11T12:38:35.317] [INFO] devops-prov.factory - need to create papi
+[2023-04-11T12:38:35.318] [INFO] devops-prov.openclient - Requesting: GET /papi/v1/groups
+[2023-04-11T12:38:35.321] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-y6igvh7v5yk3c5c5-52jufhxsrppcdnlx;access_token=akab-tspktyudtkthiblu-6pedlonweipq5jpp;timestamp=20230411T12:38:35+0000;nonce=8b838df9-d2d7-446f-b09c-52942747ac6f;
+
+[2023-04-11T12:38:35.322] [INFO] devops-prov.edgegrid.helpers - Body is ""
+[2023-04-11T12:38:35.322] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 0
+[2023-04-11T12:38:35.322] [INFO] devops-prov.edgegrid.helpers - Data to sign: "GET	https	akab-iateral64b7q2mtp-uhlpwx747q6d5hsk.luna.akamaiapis.net	/papi/v1/groups			EG1-HMAC-SHA256 client_token=akab-y6igvh7v5yk3c5c5-52jufhxsrppcdnlx;access_token=akab-tspktyudtkthiblu-6pedlonweipq5jpp;timestamp=20230411T12:38:35+0000;nonce=8b838df9-d2d7-446f-b09c-52942747ac6f;" 
+
+[2023-04-11T12:38:35.323] [INFO] devops-prov.edgegrid.helpers - Signing key: df9PBlRvtaZXPXr7Ale7iPccCGqAPh2unsLtMO7YYfQ=
+
+[2023-04-11T12:38:35.323] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-y6igvh7v5yk3c5c5-52jufhxsrppcdnlx;access_token=akab-tspktyudtkthiblu-6pedlonweipq5jpp;timestamp=20230411T12:38:35+0000;nonce=8b838df9-d2d7-446f-b09c-52942747ac6f;signature=D2fX5LVneaFxaTz8VYHKjomjGgUiFyrAo6EYs4lYvlY=
+
+[2023-04-11T12:38:35.340] [INFO] devops-prov.edgegrid - request {
+  debugId: 1,
+  uri: 'https://akab-iateral64b7q2mtp-uhlpwx747q6d5hsk.luna.akamaiapis.net/papi/v1/groups',
+  method: 'GET',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-y6igvh7v5yk3c5c5-52jufhxsrppcdnlx;access_token=akab-tspktyudtkthiblu-6pedlonweipq5jpp;timestamp=20230411T12:38:35+0000;nonce=8b838df9-d2d7-446f-b09c-52942747ac6f;signature=D2fX5LVneaFxaTz8VYHKjomjGgUiFyrAo6EYs4lYvlY=',
+    host: 'akab-iateral64b7q2mtp-uhlpwx747q6d5hsk.luna.akamaiapis.net'
+  }
+}
+[2023-04-11T12:38:36.187] [INFO] devops-prov.edgegrid - response {
+  debugId: 1,
+  headers: {
+    server: 'nginx',
+    'content-type': 'application/json;charset=UTF-8',
+    'x-ids-session-id': '5a6a305d-b56d-4499-a386-857a0d19bc5f, 5a6a305d-b56d-4499-a386-857a0d19bc5f',
+    'papi-cache-status': 'CACHE_MISS',
+    'cache-control': 'no-store',
+    vary: 'accept-encoding',
+    'x-trace-id': 'ec11643554cbd4ac',
+    'content-length': '275',
+    date: 'Tue, 11 Apr 2023 12:38:36 GMT',
+    connection: 'keep-alive'
+  },
+  statusCode: 200,
+  body: '{\n' +
+    '  "accountId" : "act_F-AC-4917414",\n' +
+    '  "accountName" : "Marketplace Test 01",\n' +
+    '  "groups" : {\n' +
+    '    "items" : [ {\n' +
+    '      "groupName" : "20230323012443",\n' +
+    '      "groupId" : "grp_232865",\n' +
+    '      "parentGroupId" : "grp_232397",\n' +
+    '      "contractIds" : [ "ctr_V-41DUHPB" ]\n' +
+    '    } ]\n' +
+    '  }\n' +
+    '}'
+}
+[2023-04-11T12:38:36.188] [INFO] devops-prov.openclient - Status code:  200
+[2023-04-11T12:38:36.188] [INFO] devops-prov.openclient - Body:  {
+  "accountId" : "act_F-AC-4917414",
+  "accountName" : "Marketplace Test 01",
+  "groups" : {
+    "items" : [ {
+      "groupName" : "20230323012443",
+      "groupId" : "grp_232865",
+      "parentGroupId" : "grp_232397",
+      "contractIds" : [ "ctr_V-41DUHPB" ]
+    } ]
+  }
+}
+[2023-04-11T12:38:48.755] [INFO] devops-prov.factory - Switching account key to: 'undefined'
+[2023-04-11T12:38:48.757] [INFO] devops-prov.factory - Using credentials file: '/home/coder/workspaces/Deliver_your_first_site/documents/edgerc.config', section: 'papi'
+[2023-04-11T12:39:14.577] [INFO] devops-prov.factory - Switching account key to: 'undefined'
+[2023-04-11T12:39:14.578] [INFO] devops-prov.factory - Using credentials file: '/home/coder/workspaces/Deliver_your_first_site/documents/edgerc.config', section: 'papi'
+[2023-04-11T12:39:14.578] [INFO] devops-prov.factory - need to create papi
+[2023-04-11T12:39:14.579] [INFO] devops-prov.openclient - Requesting: GET /papi/v1/edgehostnames/?contractId=ctr_V-41DUHPB&groupId=232865
+[2023-04-11T12:39:14.583] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-y6igvh7v5yk3c5c5-52jufhxsrppcdnlx;access_token=akab-tspktyudtkthiblu-6pedlonweipq5jpp;timestamp=20230411T12:39:14+0000;nonce=f7f3b1eb-5d66-4f45-9697-54a777b20bb5;
+
+[2023-04-11T12:39:14.584] [INFO] devops-prov.edgegrid.helpers - Body is ""
+[2023-04-11T12:39:14.584] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 0
+[2023-04-11T12:39:14.584] [INFO] devops-prov.edgegrid.helpers - Data to sign: "GET	https	akab-iateral64b7q2mtp-uhlpwx747q6d5hsk.luna.akamaiapis.net	/papi/v1/edgehostnames/?contractId=ctr_V-41DUHPB&groupId=232865			EG1-HMAC-SHA256 client_token=akab-y6igvh7v5yk3c5c5-52jufhxsrppcdnlx;access_token=akab-tspktyudtkthiblu-6pedlonweipq5jpp;timestamp=20230411T12:39:14+0000;nonce=f7f3b1eb-5d66-4f45-9697-54a777b20bb5;" 
+
+[2023-04-11T12:39:14.585] [INFO] devops-prov.edgegrid.helpers - Signing key: togM+oWY1uqll9vKJRuQxzhJSptOgIpYz7sWXc7e/48=
+
+[2023-04-11T12:39:14.585] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-y6igvh7v5yk3c5c5-52jufhxsrppcdnlx;access_token=akab-tspktyudtkthiblu-6pedlonweipq5jpp;timestamp=20230411T12:39:14+0000;nonce=f7f3b1eb-5d66-4f45-9697-54a777b20bb5;signature=Zgt/8heptFPyNQNKxNX2eU3s54ee88wjd072+ZgF0f0=
+
+[2023-04-11T12:39:14.601] [INFO] devops-prov.edgegrid - request {
+  debugId: 1,
+  uri: 'https://akab-iateral64b7q2mtp-uhlpwx747q6d5hsk.luna.akamaiapis.net/papi/v1/edgehostnames/?contractId=ctr_V-41DUHPB&groupId=232865',
+  method: 'GET',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-y6igvh7v5yk3c5c5-52jufhxsrppcdnlx;access_token=akab-tspktyudtkthiblu-6pedlonweipq5jpp;timestamp=20230411T12:39:14+0000;nonce=f7f3b1eb-5d66-4f45-9697-54a777b20bb5;signature=Zgt/8heptFPyNQNKxNX2eU3s54ee88wjd072+ZgF0f0=',
+    host: 'akab-iateral64b7q2mtp-uhlpwx747q6d5hsk.luna.akamaiapis.net'
+  }
+}
+[2023-04-11T12:39:15.570] [INFO] devops-prov.edgegrid - response {
+  debugId: 1,
+  headers: {
+    server: 'nginx',
+    'content-type': 'application/json;charset=UTF-8',
+    'x-ids-session-id': '09bbc4cc-f08f-4349-b2d8-85519847f64e, 09bbc4cc-f08f-4349-b2d8-85519847f64e',
+    'papi-cache-status': 'CACHE_MISS',
+    'x-limit-edgehostnames-per-contract-limit': '1000',
+    'x-limit-edgehostnames-per-contract-remaining': '988',
+    'cache-control': 'no-store',
+    vary: 'accept-encoding',
+    'x-trace-id': 'f779643554f2d358',
+    'content-length': '4044',
+    date: 'Tue, 11 Apr 2023 12:39:15 GMT',
+    connection: 'keep-alive'
+  },
+  statusCode: 200,
+  body: '{\n' +
+    '  "accountId" : "act_F-AC-4917414",\n' +
+    '  "contractId" : "ctr_V-41DUHPB",\n' +
+    '  "groupId" : "grp_232865",\n' +
+    '  "edgeHostnames" : {\n' +
+    '    "items" : [ {\n' +
+    '      "edgeHostnameId" : "ehn_5319732",\n' +
+    '      "domainPrefix" : "lab001.akamai-lab.com",\n' +
+    '      "domainSuffix" : "edgesuite.net",\n' +
+    '      "status" : "CREATED",\n' +
+    '      "ipVersionBehavior" : "IPV6_COMPLIANCE",\n' +
+    '      "secure" : false,\n' +
+    '      "edgeHostnameDomain" : "lab001.akamai-lab.com.edgesuite.net"\n' +
+    '    }, {\n' +
+    '      "edgeHostnameId" : "ehn_5320465",\n' +
+    '      "domainPrefix" : "lab2",\n' +
+    '      "domainSuffix" : "edgesuite.net",\n' +
+    '      "status" : "CREATED",\n' +
+    '      "ipVersionBehavior" : "IPV6_COMPLIANCE",\n' +
+    '      "secure" : false,\n' +
+    '      "edgeHostnameDomain" : "lab2.edgesuite.net"\n' +
+    '    }, {\n' +
+    '      "edgeHostnameId" : "ehn_5320712",\n' +
+    '      "domainPrefix" : "20230403123732.akamai-lab.com",\n' +
+    '      "domainSuffix" : "edgesuite.net",\n' +
+    '      "status" : "CREATED",\n' +
+    '      "ipVersionBehavior" : "IPV6_COMPLIANCE",\n' +
+    '      "secure" : false,\n' +
+    '      "edgeHostnameDomain" : "20230403123732.akamai-lab.com.edgesuite.net"\n' +
+    '    }, {\n' +
+    '      "edgeHostnameId" : "ehn_5321903",\n' +
+    '      "domainPrefix" : "13913420230403123732.akamai-lab.com",\n' +
+    '      "domainSuffix" : "edgesuite.net",\n' +
+    '      "status" : "CREATED",\n' +
+    '      "ipVersionBehavior" : "IPV6_COMPLIANCE",\n' +
+    '      "secure" : false,\n' +
+    '      "edgeHostnameDomain" : "13913420230403123732.akamai-lab.com.edgesuite.net"\n' +
+    '    }, {\n' +
+    '      "edgeHostnameId" : "ehn_5321906",\n' +
+    '      "domainPrefix" : "230405mute-cataract.akamai-lab.com",\n' +
+    '      "domainSuffix" : "edgesuite.net",\n' +
+    '      "status" : "CREATED",\n' +
+    '      "ipVersionBehavior" : "IPV6_COMPLIANCE",\n' +
+    '      "secure" : false,\n' +
+    '      "edgeHostnameDomain" : "230405mute-cataract.akamai-lab.com.edgesuite.net"\n' +
+    '    }, {\n' +
+    '      "edgeHostnameId" : "ehn_5321907",\n' +
+    '      "domainPrefix" : "230405013816-spry-entropy.akamai-lab.com",\n' +
+    '      "domainSuffix" : "edgesuite.net",\n' +
+    '      "status" : "CREATED",\n' +
+    '      "ipVersionBehavior" : "IPV6_COMPLIANCE",\n' +
+    '      "secure" : false,\n' +
+    '      "edgeHostnameDomain" : "230405013816-spry-entropy.akamai-lab.com.edgesuite.net"\n' +
+    '    }, {\n' +
+    '      "edgeHostnameId" : "ehn_5321908",\n' +
+    '      "domainPrefix" : "230405014102-sharp-berm.akamai-lab.com",\n' +
+    '      "domainSuffix" : "edgesuite.net",\n' +
+    '      "status" : "CREATED",\n' +
+    '      "ipVersionBehavior" : "IPV6_COMPLIANCE",\n' +
+    '      "secure" : false,\n' +
+    '      "edgeHostnameDomain" : "230405014102-sharp-berm.akamai-lab.com.edgesuite.net"\n' +
+    '    }, {\n' +
+    '      "edgeHostnameId" : "ehn_5321910",\n' +
+    '      "domainPrefix" : "230405014832-international-dowel.akamai-lab.com",\n' +
+    '      "domainSuffix" : "edgesuite.net",\n' +
+    '      "status" : "CREATED",\n' +
+    '      "ipVersionBehavior" : "IPV6_COMPLIANCE",\n' +
+    '      "secure" : false,\n' +
+    '      "edgeHostnameDomain" : "230405014832-international-dowel.akamai-lab.com.edgesuite.net"\n' +
+    '    }, {\n' +
+    '      "edgeHostnameId" : "ehn_5321911",\n' +
+    '      "domainPrefix" : "230405015553-icy-pizza.akamai-lab.com",\n' +
+    '      "domainSuffix" : "edgesuite.net",\n' +
+    '      "status" : "CREATED",\n' +
+    '      "ipVersionBehavior" : "IPV6_COMPLIANCE",\n' +
+    '      "secure" : false,\n' +
+    '      "edgeHostnameDomain" : "230405015553-icy-pizza.akamai-lab.com.edgesuite.net"\n' +
+    '    }, {\n' +
+    '      "edgeHostnameId" : "ehn_5321956",\n' +
+    '      "domainPrefix" : "301500-nutritious-spire",\n' +
+    '      "domainSuffix" : "edgesuite.net",\n' +
+    '      "status" : "CREATED",\n' +
+    '      "ipVersionBehavior" : "IPV6_COMPLIANCE",\n' +
+    '      "secure" : false,\n' +
+    '      "edgeHostnameDomain" : "301500-nutritious-spire.edgesuite.net"\n' +
+    '    }, {\n' +
+    '      "edgeHostnameId" : "ehn_5321968",\n' +
+    '      "domainPrefix" : "53206-acidic-fleet.akamai-lab.com",\n' +
+    '      "domainSuffix" : "edgesuite.net",\n' +
+    '      "status" : "CREATED",\n' +
+    '      "ipVersionBehavior" : "IPV6_COMPLIANCE",\n' +
+    '      "secure" : false,\n' +
+    '      "edgeHostnameDomain" : "53206-acidic-fleet.akamai-lab.com.edgesuite.net"\n' +
+    '    }, {\n' +
+    '      "edgeHostnameId" : "ehn_5326262",\n' +
+    '      "domainPrefix" : "894710-charcoal-availability.akamai-lab.com",\n' +
+    '      "domainSuffix" : "edgesuite.net",\n' +
+    '      "status" : "CREATED",\n' +
+    '      "ipVersionBehavior" : "IPV6_COMPLIANCE",\n' +
+    '      "secure" : false,\n' +
+    '      "edgeHostnameDomain" : "894710-charcoal-availability.akamai-lab.com.edgesuite.net"\n' +
+    '    } ]\n' +
+    '  }\n' +
+    '}'
+}
+[2023-04-11T12:39:15.571] [INFO] devops-prov.openclient - Status code:  200
+[2023-04-11T12:39:15.571] [INFO] devops-prov.openclient - Body:  {
+  "accountId" : "act_F-AC-4917414",
+  "contractId" : "ctr_V-41DUHPB",
+  "groupId" : "grp_232865",
+  "edgeHostnames" : {
+    "items" : [ {
+      "edgeHostnameId" : "ehn_5319732",
+      "domainPrefix" : "lab001.akamai-lab.com",
+      "domainSuffix" : "edgesuite.net",
+      "status" : "CREATED",
+      "ipVersionBehavior" : "IPV6_COMPLIANCE",
+      "secure" : false,
+      "edgeHostnameDomain" : "lab001.akamai-lab.com.edgesuite.net"
+    }, {
+      "edgeHostnameId" : "ehn_5320465",
+      "domainPrefix" : "lab2",
+      "domainSuffix" : "edgesuite.net",
+      "status" : "CREATED",
+      "ipVersionBehavior" : "IPV6_COMPLIANCE",
+      "secure" : false,
+      "edgeHostnameDomain" : "lab2.edgesuite.net"
+    }, {
+      "edgeHostnameId" : "ehn_5320712",
+      "domainPrefix" : "20230403123732.akamai-lab.com",
+      "domainSuffix" : "edgesuite.net",
+      "status" : "CREATED",
+      "ipVersionBehavior" : "IPV6_COMPLIANCE",
+      "secure" : false,
+      "edgeHostnameDomain" : "20230403123732.akamai-lab.com.edgesuite.net"
+    }, {
+      "edgeHostnameId" : "ehn_5321903",
+      "domainPrefix" : "13913420230403123732.akamai-lab.com",
+      "domainSuffix" : "edgesuite.net",
+      "status" : "CREATED",
+      "ipVersionBehavior" : "IPV6_COMPLIANCE",
+      "secure" : false,
+      "edgeHostnameDomain" : "13913420230403123732.akamai-lab.com.edgesuite.net"
+    }, {
+      "edgeHostnameId" : "ehn_5321906",
+      "domainPrefix" : "230405mute-cataract.akamai-lab.com",
+      "domainSuffix" : "edgesuite.net",
+      "status" : "CREATED",
+      "ipVersionBehavior" : "IPV6_COMPLIANCE",
+      "secure" : false,
+      "edgeHostnameDomain" : "230405mute-cataract.akamai-lab.com.edgesuite.net"
+    }, {
+      "edgeHostnameId" : "ehn_5321907",
+      "domainPrefix" : "230405013816-spry-entropy.akamai-lab.com",
+      "domainSuffix" : "edgesuite.net",
+      "status" : "CREATED",
+      "ipVersionBehavior" : "IPV6_COMPLIANCE",
+      "secure" : false,
+      "edgeHostnameDomain" : "230405013816-spry-entropy.akamai-lab.com.edgesuite.net"
+    }, {
+      "edgeHostnameId" : "ehn_5321908",
+      "domainPrefix" : "230405014102-sharp-berm.akamai-lab.com",
+      "domainSuffix" : "edgesuite.net",
+      "status" : "CREATED",
+      "ipVersionBehavior" : "IPV6_COMPLIANCE",
+      "secure" : false,
+      "edgeHostnameDomain" : "230405014102-sharp-berm.akamai-lab.com.edgesuite.net"
+    }, {
+      "edgeHostnameId" : "ehn_5321910",
+      "domainPrefix" : "230405014832-international-dowel.akamai-lab.com",
+      "domainSuffix" : "edgesuite.net",
+      "status" : "CREATED",
+      "ipVersionBehavior" : "IPV6_COMPLIANCE",
+      "secure" : false,
+      "edgeHostnameDomain" : "230405014832-international-dowel.akamai-lab.com.edgesuite.net"
+    }, {
+      "edgeHostnameId" : "ehn_5321911",
+      "domainPrefix" : "230405015553-icy-pizza.akamai-lab.com",
+      "domainSuffix" : "edgesuite.net",
+      "status" : "CREATED",
+      "ipVersionBehavior" : "IPV6_COMPLIANCE",
+      "secure" : false,
+      "edgeHostnameDomain" : "230405015553-icy-pizza.akamai-lab.com.edgesuite.net"
+    }, {
+      "edgeHostnameId" : "ehn_5321956",
+      "domainPrefix" : "301500-nutritious-spire",
+      "domainSuffix" : "edgesuite.net",
+      "status" : "CREATED",
+      "ipVersionBehavior" : "IPV6_COMPLIANCE",
+      "secure" : false,
+      "edgeHostnameDomain" : "301500-nutritious-spire.edgesuite.net"
+    }, {
+      "edgeHostnameId" : "ehn_5321968",
+      "domainPrefix" : "53206-acidic-fleet.akamai-lab.com",
+      "domainSuffix" : "edgesuite.net",
+      "status" : "CREATED",
+      "ipVersionBehavior" : "IPV6_COMPLIANCE",
+      "secure" : false,
+      "edgeHostnameDomain" : "53206-acidic-fleet.akamai-lab.com.edgesuite.net"
+    }, {
+      "edgeHostnameId" : "ehn_5326262",
+      "domainPrefix" : "894710-charcoal-availability.akamai-lab.com",
+      "domainSuffix" : "edgesuite.net",
+      "status" : "CREATED",
+      "ipVersionBehavior" : "IPV6_COMPLIANCE",
+      "secure" : false,
+      "edgeHostnameDomain" : "894710-charcoal-availability.akamai-lab.com.edgesuite.net"
+    } ]
+  }
+}
+[2023-04-11T13:37:17.831] [INFO] devops-prov.factory - Switching account key to: 'undefined'
+[2023-04-11T13:37:17.833] [INFO] devops-prov.factory - Using credentials file: '/home/coder/workspaces/Deliver_your_first_site/documents/edgerc.config', section: 'papi'
+[2023-04-11T13:37:17.833] [INFO] devops-prov.factory - need to create papi
+[2023-04-11T13:37:17.834] [INFO] devops-prov.openclient - Requesting: GET /papi/v1/contracts
+[2023-04-11T13:37:17.838] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-y6igvh7v5yk3c5c5-52jufhxsrppcdnlx;access_token=akab-tspktyudtkthiblu-6pedlonweipq5jpp;timestamp=20230411T13:37:17+0000;nonce=eb2b27aa-fa38-4a9c-9a3e-c480a7911d6f;
+
+[2023-04-11T13:37:17.838] [INFO] devops-prov.edgegrid.helpers - Body is ""
+[2023-04-11T13:37:17.838] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 0
+[2023-04-11T13:37:17.838] [INFO] devops-prov.edgegrid.helpers - Data to sign: "GET	https	akab-iateral64b7q2mtp-uhlpwx747q6d5hsk.luna.akamaiapis.net	/papi/v1/contracts			EG1-HMAC-SHA256 client_token=akab-y6igvh7v5yk3c5c5-52jufhxsrppcdnlx;access_token=akab-tspktyudtkthiblu-6pedlonweipq5jpp;timestamp=20230411T13:37:17+0000;nonce=eb2b27aa-fa38-4a9c-9a3e-c480a7911d6f;" 
+
+[2023-04-11T13:37:17.839] [INFO] devops-prov.edgegrid.helpers - Signing key: WjpO4lJJoE0pcywDSgUz1mWX+5U/89gLog4O3W3Os8I=
+
+[2023-04-11T13:37:17.839] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-y6igvh7v5yk3c5c5-52jufhxsrppcdnlx;access_token=akab-tspktyudtkthiblu-6pedlonweipq5jpp;timestamp=20230411T13:37:17+0000;nonce=eb2b27aa-fa38-4a9c-9a3e-c480a7911d6f;signature=Te7zlUQC7XFxdPuHjW/P06VKmTQ+/2e9J3mLu0/r86M=
+
+[2023-04-11T13:37:17.856] [INFO] devops-prov.edgegrid - request {
+  debugId: 1,
+  uri: 'https://akab-iateral64b7q2mtp-uhlpwx747q6d5hsk.luna.akamaiapis.net/papi/v1/contracts',
+  method: 'GET',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-y6igvh7v5yk3c5c5-52jufhxsrppcdnlx;access_token=akab-tspktyudtkthiblu-6pedlonweipq5jpp;timestamp=20230411T13:37:17+0000;nonce=eb2b27aa-fa38-4a9c-9a3e-c480a7911d6f;signature=Te7zlUQC7XFxdPuHjW/P06VKmTQ+/2e9J3mLu0/r86M=',
+    host: 'akab-iateral64b7q2mtp-uhlpwx747q6d5hsk.luna.akamaiapis.net'
+  }
+}
+[2023-04-11T13:37:19.014] [INFO] devops-prov.edgegrid - response {
+  debugId: 1,
+  headers: {
+    server: 'nginx',
+    'content-type': 'application/json;charset=UTF-8',
+    'x-ids-session-id': '4b386fab-7803-4f52-bb2e-5a2368a51a26, 4b386fab-7803-4f52-bb2e-5a2368a51a26',
+    'papi-cache-status': 'CACHE_MISS',
+    link: '<https://akab-iateral64b7q2mtp-uhlpwx747q6d5hsk.luna.akamaiapis.net/papi/v1/v0/schemas/request/GetContractResponse.json>; rel="describedby"',
+    'cache-control': 'no-store',
+    vary: 'accept-encoding',
+    'x-trace-id': 'fcc66435628e2335',
+    'content-length': '170',
+    date: 'Tue, 11 Apr 2023 13:37:19 GMT',
+    connection: 'keep-alive'
+  },
+  statusCode: 200,
+  body: '{\n' +
+    '  "accountId" : "act_F-AC-4917414",\n' +
+    '  "contracts" : {\n' +
+    '    "items" : [ {\n' +
+    '      "contractId" : "ctr_V-41DUHPB",\n' +
+    '      "contractTypeName" : "DIRECT_CUSTOMER"\n' +
+    '    } ]\n' +
+    '  }\n' +
+    '}'
+}
+[2023-04-11T13:37:19.014] [INFO] devops-prov.openclient - Status code:  200
+[2023-04-11T13:37:19.014] [INFO] devops-prov.openclient - Body:  {
+  "accountId" : "act_F-AC-4917414",
+  "contracts" : {
+    "items" : [ {
+      "contractId" : "ctr_V-41DUHPB",
+      "contractTypeName" : "DIRECT_CUSTOMER"
+    } ]
+  }
+}
+[2023-04-11T13:58:07.701] [INFO] devops-prov.factory - Switching account key to: 'undefined'
+[2023-04-11T13:58:07.702] [INFO] devops-prov.factory - Using credentials file: '/home/coder/workspaces/Deliver_your_first_site/documents/edgerc.config', section: 'papi'
+[2023-04-11T13:58:07.703] [INFO] devops-prov.factory - need to create papi
+[2023-04-11T13:58:07.703] [INFO] devops-prov.openclient - Requesting: GET /papi/v1/edgehostnames/?contractId=ctr_V-41DUHPB&groupId=232865
+[2023-04-11T13:58:07.707] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-y6igvh7v5yk3c5c5-52jufhxsrppcdnlx;access_token=akab-tspktyudtkthiblu-6pedlonweipq5jpp;timestamp=20230411T13:58:07+0000;nonce=b2f7db78-da65-485a-8d8d-4684dfa2e529;
+
+[2023-04-11T13:58:07.708] [INFO] devops-prov.edgegrid.helpers - Body is ""
+[2023-04-11T13:58:07.708] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 0
+[2023-04-11T13:58:07.708] [INFO] devops-prov.edgegrid.helpers - Data to sign: "GET	https	akab-iateral64b7q2mtp-uhlpwx747q6d5hsk.luna.akamaiapis.net	/papi/v1/edgehostnames/?contractId=ctr_V-41DUHPB&groupId=232865			EG1-HMAC-SHA256 client_token=akab-y6igvh7v5yk3c5c5-52jufhxsrppcdnlx;access_token=akab-tspktyudtkthiblu-6pedlonweipq5jpp;timestamp=20230411T13:58:07+0000;nonce=b2f7db78-da65-485a-8d8d-4684dfa2e529;" 
+
+[2023-04-11T13:58:07.708] [INFO] devops-prov.edgegrid.helpers - Signing key: nrtTa8Cpdt28oo+RyCqO2JJ6Lr1ZKGl+kYXkPFUThtI=
+
+[2023-04-11T13:58:07.709] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-y6igvh7v5yk3c5c5-52jufhxsrppcdnlx;access_token=akab-tspktyudtkthiblu-6pedlonweipq5jpp;timestamp=20230411T13:58:07+0000;nonce=b2f7db78-da65-485a-8d8d-4684dfa2e529;signature=DXcEMtWUdoyRpjQ2S5zAY4mMY5wyFtrmewLPCKrCNhE=
+
+[2023-04-11T13:58:07.725] [INFO] devops-prov.edgegrid - request {
+  debugId: 1,
+  uri: 'https://akab-iateral64b7q2mtp-uhlpwx747q6d5hsk.luna.akamaiapis.net/papi/v1/edgehostnames/?contractId=ctr_V-41DUHPB&groupId=232865',
+  method: 'GET',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-y6igvh7v5yk3c5c5-52jufhxsrppcdnlx;access_token=akab-tspktyudtkthiblu-6pedlonweipq5jpp;timestamp=20230411T13:58:07+0000;nonce=b2f7db78-da65-485a-8d8d-4684dfa2e529;signature=DXcEMtWUdoyRpjQ2S5zAY4mMY5wyFtrmewLPCKrCNhE=',
+    host: 'akab-iateral64b7q2mtp-uhlpwx747q6d5hsk.luna.akamaiapis.net'
+  }
+}
+[2023-04-11T13:58:09.084] [INFO] devops-prov.edgegrid - response {
+  debugId: 1,
+  headers: {
+    server: 'nginx',
+    'content-type': 'application/json;charset=UTF-8',
+    'x-ids-session-id': 'e3c7ae88-d0e4-406c-b638-f028d7f88c7c, e3c7ae88-d0e4-406c-b638-f028d7f88c7c',
+    'papi-cache-status': 'CACHE_MISS',
+    'x-limit-edgehostnames-per-contract-limit': '1000',
+    'x-limit-edgehostnames-per-contract-remaining': '988',
+    'cache-control': 'no-store',
+    vary: 'accept-encoding',
+    'x-trace-id': 'd1746435676f0fb9',
+    'content-length': '4044',
+    date: 'Tue, 11 Apr 2023 13:58:09 GMT',
+    connection: 'keep-alive'
+  },
+  statusCode: 200,
+  body: '{\n' +
+    '  "accountId" : "act_F-AC-4917414",\n' +
+    '  "contractId" : "ctr_V-41DUHPB",\n' +
+    '  "groupId" : "grp_232865",\n' +
+    '  "edgeHostnames" : {\n' +
+    '    "items" : [ {\n' +
+    '      "edgeHostnameId" : "ehn_5319732",\n' +
+    '      "domainPrefix" : "lab001.akamai-lab.com",\n' +
+    '      "domainSuffix" : "edgesuite.net",\n' +
+    '      "status" : "CREATED",\n' +
+    '      "ipVersionBehavior" : "IPV6_COMPLIANCE",\n' +
+    '      "secure" : false,\n' +
+    '      "edgeHostnameDomain" : "lab001.akamai-lab.com.edgesuite.net"\n' +
+    '    }, {\n' +
+    '      "edgeHostnameId" : "ehn_5320465",\n' +
+    '      "domainPrefix" : "lab2",\n' +
+    '      "domainSuffix" : "edgesuite.net",\n' +
+    '      "status" : "CREATED",\n' +
+    '      "ipVersionBehavior" : "IPV6_COMPLIANCE",\n' +
+    '      "secure" : false,\n' +
+    '      "edgeHostnameDomain" : "lab2.edgesuite.net"\n' +
+    '    }, {\n' +
+    '      "edgeHostnameId" : "ehn_5320712",\n' +
+    '      "domainPrefix" : "20230403123732.akamai-lab.com",\n' +
+    '      "domainSuffix" : "edgesuite.net",\n' +
+    '      "status" : "CREATED",\n' +
+    '      "ipVersionBehavior" : "IPV6_COMPLIANCE",\n' +
+    '      "secure" : false,\n' +
+    '      "edgeHostnameDomain" : "20230403123732.akamai-lab.com.edgesuite.net"\n' +
+    '    }, {\n' +
+    '      "edgeHostnameId" : "ehn_5321903",\n' +
+    '      "domainPrefix" : "13913420230403123732.akamai-lab.com",\n' +
+    '      "domainSuffix" : "edgesuite.net",\n' +
+    '      "status" : "CREATED",\n' +
+    '      "ipVersionBehavior" : "IPV6_COMPLIANCE",\n' +
+    '      "secure" : false,\n' +
+    '      "edgeHostnameDomain" : "13913420230403123732.akamai-lab.com.edgesuite.net"\n' +
+    '    }, {\n' +
+    '      "edgeHostnameId" : "ehn_5321906",\n' +
+    '      "domainPrefix" : "230405mute-cataract.akamai-lab.com",\n' +
+    '      "domainSuffix" : "edgesuite.net",\n' +
+    '      "status" : "CREATED",\n' +
+    '      "ipVersionBehavior" : "IPV6_COMPLIANCE",\n' +
+    '      "secure" : false,\n' +
+    '      "edgeHostnameDomain" : "230405mute-cataract.akamai-lab.com.edgesuite.net"\n' +
+    '    }, {\n' +
+    '      "edgeHostnameId" : "ehn_5321907",\n' +
+    '      "domainPrefix" : "230405013816-spry-entropy.akamai-lab.com",\n' +
+    '      "domainSuffix" : "edgesuite.net",\n' +
+    '      "status" : "CREATED",\n' +
+    '      "ipVersionBehavior" : "IPV6_COMPLIANCE",\n' +
+    '      "secure" : false,\n' +
+    '      "edgeHostnameDomain" : "230405013816-spry-entropy.akamai-lab.com.edgesuite.net"\n' +
+    '    }, {\n' +
+    '      "edgeHostnameId" : "ehn_5321908",\n' +
+    '      "domainPrefix" : "230405014102-sharp-berm.akamai-lab.com",\n' +
+    '      "domainSuffix" : "edgesuite.net",\n' +
+    '      "status" : "CREATED",\n' +
+    '      "ipVersionBehavior" : "IPV6_COMPLIANCE",\n' +
+    '      "secure" : false,\n' +
+    '      "edgeHostnameDomain" : "230405014102-sharp-berm.akamai-lab.com.edgesuite.net"\n' +
+    '    }, {\n' +
+    '      "edgeHostnameId" : "ehn_5321910",\n' +
+    '      "domainPrefix" : "230405014832-international-dowel.akamai-lab.com",\n' +
+    '      "domainSuffix" : "edgesuite.net",\n' +
+    '      "status" : "CREATED",\n' +
+    '      "ipVersionBehavior" : "IPV6_COMPLIANCE",\n' +
+    '      "secure" : false,\n' +
+    '      "edgeHostnameDomain" : "230405014832-international-dowel.akamai-lab.com.edgesuite.net"\n' +
+    '    }, {\n' +
+    '      "edgeHostnameId" : "ehn_5321911",\n' +
+    '      "domainPrefix" : "230405015553-icy-pizza.akamai-lab.com",\n' +
+    '      "domainSuffix" : "edgesuite.net",\n' +
+    '      "status" : "CREATED",\n' +
+    '      "ipVersionBehavior" : "IPV6_COMPLIANCE",\n' +
+    '      "secure" : false,\n' +
+    '      "edgeHostnameDomain" : "230405015553-icy-pizza.akamai-lab.com.edgesuite.net"\n' +
+    '    }, {\n' +
+    '      "edgeHostnameId" : "ehn_5321956",\n' +
+    '      "domainPrefix" : "301500-nutritious-spire",\n' +
+    '      "domainSuffix" : "edgesuite.net",\n' +
+    '      "status" : "CREATED",\n' +
+    '      "ipVersionBehavior" : "IPV6_COMPLIANCE",\n' +
+    '      "secure" : false,\n' +
+    '      "edgeHostnameDomain" : "301500-nutritious-spire.edgesuite.net"\n' +
+    '    }, {\n' +
+    '      "edgeHostnameId" : "ehn_5321968",\n' +
+    '      "domainPrefix" : "53206-acidic-fleet.akamai-lab.com",\n' +
+    '      "domainSuffix" : "edgesuite.net",\n' +
+    '      "status" : "CREATED",\n' +
+    '      "ipVersionBehavior" : "IPV6_COMPLIANCE",\n' +
+    '      "secure" : false,\n' +
+    '      "edgeHostnameDomain" : "53206-acidic-fleet.akamai-lab.com.edgesuite.net"\n' +
+    '    }, {\n' +
+    '      "edgeHostnameId" : "ehn_5326262",\n' +
+    '      "domainPrefix" : "894710-charcoal-availability.akamai-lab.com",\n' +
+    '      "domainSuffix" : "edgesuite.net",\n' +
+    '      "status" : "CREATED",\n' +
+    '      "ipVersionBehavior" : "IPV6_COMPLIANCE",\n' +
+    '      "secure" : false,\n' +
+    '      "edgeHostnameDomain" : "894710-charcoal-availability.akamai-lab.com.edgesuite.net"\n' +
+    '    } ]\n' +
+    '  }\n' +
+    '}'
+}
+[2023-04-11T13:58:09.085] [INFO] devops-prov.openclient - Status code:  200
+[2023-04-11T13:58:09.085] [INFO] devops-prov.openclient - Body:  {
+  "accountId" : "act_F-AC-4917414",
+  "contractId" : "ctr_V-41DUHPB",
+  "groupId" : "grp_232865",
+  "edgeHostnames" : {
+    "items" : [ {
+      "edgeHostnameId" : "ehn_5319732",
+      "domainPrefix" : "lab001.akamai-lab.com",
+      "domainSuffix" : "edgesuite.net",
+      "status" : "CREATED",
+      "ipVersionBehavior" : "IPV6_COMPLIANCE",
+      "secure" : false,
+      "edgeHostnameDomain" : "lab001.akamai-lab.com.edgesuite.net"
+    }, {
+      "edgeHostnameId" : "ehn_5320465",
+      "domainPrefix" : "lab2",
+      "domainSuffix" : "edgesuite.net",
+      "status" : "CREATED",
+      "ipVersionBehavior" : "IPV6_COMPLIANCE",
+      "secure" : false,
+      "edgeHostnameDomain" : "lab2.edgesuite.net"
+    }, {
+      "edgeHostnameId" : "ehn_5320712",
+      "domainPrefix" : "20230403123732.akamai-lab.com",
+      "domainSuffix" : "edgesuite.net",
+      "status" : "CREATED",
+      "ipVersionBehavior" : "IPV6_COMPLIANCE",
+      "secure" : false,
+      "edgeHostnameDomain" : "20230403123732.akamai-lab.com.edgesuite.net"
+    }, {
+      "edgeHostnameId" : "ehn_5321903",
+      "domainPrefix" : "13913420230403123732.akamai-lab.com",
+      "domainSuffix" : "edgesuite.net",
+      "status" : "CREATED",
+      "ipVersionBehavior" : "IPV6_COMPLIANCE",
+      "secure" : false,
+      "edgeHostnameDomain" : "13913420230403123732.akamai-lab.com.edgesuite.net"
+    }, {
+      "edgeHostnameId" : "ehn_5321906",
+      "domainPrefix" : "230405mute-cataract.akamai-lab.com",
+      "domainSuffix" : "edgesuite.net",
+      "status" : "CREATED",
+      "ipVersionBehavior" : "IPV6_COMPLIANCE",
+      "secure" : false,
+      "edgeHostnameDomain" : "230405mute-cataract.akamai-lab.com.edgesuite.net"
+    }, {
+      "edgeHostnameId" : "ehn_5321907",
+      "domainPrefix" : "230405013816-spry-entropy.akamai-lab.com",
+      "domainSuffix" : "edgesuite.net",
+      "status" : "CREATED",
+      "ipVersionBehavior" : "IPV6_COMPLIANCE",
+      "secure" : false,
+      "edgeHostnameDomain" : "230405013816-spry-entropy.akamai-lab.com.edgesuite.net"
+    }, {
+      "edgeHostnameId" : "ehn_5321908",
+      "domainPrefix" : "230405014102-sharp-berm.akamai-lab.com",
+      "domainSuffix" : "edgesuite.net",
+      "status" : "CREATED",
+      "ipVersionBehavior" : "IPV6_COMPLIANCE",
+      "secure" : false,
+      "edgeHostnameDomain" : "230405014102-sharp-berm.akamai-lab.com.edgesuite.net"
+    }, {
+      "edgeHostnameId" : "ehn_5321910",
+      "domainPrefix" : "230405014832-international-dowel.akamai-lab.com",
+      "domainSuffix" : "edgesuite.net",
+      "status" : "CREATED",
+      "ipVersionBehavior" : "IPV6_COMPLIANCE",
+      "secure" : false,
+      "edgeHostnameDomain" : "230405014832-international-dowel.akamai-lab.com.edgesuite.net"
+    }, {
+      "edgeHostnameId" : "ehn_5321911",
+      "domainPrefix" : "230405015553-icy-pizza.akamai-lab.com",
+      "domainSuffix" : "edgesuite.net",
+      "status" : "CREATED",
+      "ipVersionBehavior" : "IPV6_COMPLIANCE",
+      "secure" : false,
+      "edgeHostnameDomain" : "230405015553-icy-pizza.akamai-lab.com.edgesuite.net"
+    }, {
+      "edgeHostnameId" : "ehn_5321956",
+      "domainPrefix" : "301500-nutritious-spire",
+      "domainSuffix" : "edgesuite.net",
+      "status" : "CREATED",
+      "ipVersionBehavior" : "IPV6_COMPLIANCE",
+      "secure" : false,
+      "edgeHostnameDomain" : "301500-nutritious-spire.edgesuite.net"
+    }, {
+      "edgeHostnameId" : "ehn_5321968",
+      "domainPrefix" : "53206-acidic-fleet.akamai-lab.com",
+      "domainSuffix" : "edgesuite.net",
+      "status" : "CREATED",
+      "ipVersionBehavior" : "IPV6_COMPLIANCE",
+      "secure" : false,
+      "edgeHostnameDomain" : "53206-acidic-fleet.akamai-lab.com.edgesuite.net"
+    }, {
+      "edgeHostnameId" : "ehn_5326262",
+      "domainPrefix" : "894710-charcoal-availability.akamai-lab.com",
+      "domainSuffix" : "edgesuite.net",
+      "status" : "CREATED",
+      "ipVersionBehavior" : "IPV6_COMPLIANCE",
+      "secure" : false,
+      "edgeHostnameDomain" : "894710-charcoal-availability.akamai-lab.com.edgesuite.net"
+    } ]
+  }
+}
+[2023-04-11T14:00:54.193] [INFO] devops-prov.factory - Switching account key to: 'undefined'
+[2023-04-11T14:00:54.194] [INFO] devops-prov.factory - Using credentials file: '/home/coder/workspaces/Deliver_your_first_site/documents/edgerc.config', section: 'papi'
+[2023-04-11T14:00:54.194] [INFO] devops-prov.factory - need to create papi
+[2023-04-11T14:00:54.195] [INFO] devops-prov.openclient - Requesting: GET /papi/v1/edgehostnames/?contractId=ctr_V-41DUHPB&groupId=232865
+[2023-04-11T14:00:54.199] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-y6igvh7v5yk3c5c5-52jufhxsrppcdnlx;access_token=akab-tspktyudtkthiblu-6pedlonweipq5jpp;timestamp=20230411T14:00:54+0000;nonce=b1f053de-20d2-441b-8f78-dddafdfc3bf7;
+
+[2023-04-11T14:00:54.200] [INFO] devops-prov.edgegrid.helpers - Body is ""
+[2023-04-11T14:00:54.200] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 0
+[2023-04-11T14:00:54.200] [INFO] devops-prov.edgegrid.helpers - Data to sign: "GET	https	akab-iateral64b7q2mtp-uhlpwx747q6d5hsk.luna.akamaiapis.net	/papi/v1/edgehostnames/?contractId=ctr_V-41DUHPB&groupId=232865			EG1-HMAC-SHA256 client_token=akab-y6igvh7v5yk3c5c5-52jufhxsrppcdnlx;access_token=akab-tspktyudtkthiblu-6pedlonweipq5jpp;timestamp=20230411T14:00:54+0000;nonce=b1f053de-20d2-441b-8f78-dddafdfc3bf7;" 
+
+[2023-04-11T14:00:54.201] [INFO] devops-prov.edgegrid.helpers - Signing key: jX6v/yZ+swpyGgoLPZC40e7oddBusgt/4Yc0JEhtIsk=
+
+[2023-04-11T14:00:54.201] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-y6igvh7v5yk3c5c5-52jufhxsrppcdnlx;access_token=akab-tspktyudtkthiblu-6pedlonweipq5jpp;timestamp=20230411T14:00:54+0000;nonce=b1f053de-20d2-441b-8f78-dddafdfc3bf7;signature=8ES8vsrSPh/zKwQ++TPf9BFoTohQeT+FQ2+SVcEBtAk=
+
+[2023-04-11T14:00:54.217] [INFO] devops-prov.edgegrid - request {
+  debugId: 1,
+  uri: 'https://akab-iateral64b7q2mtp-uhlpwx747q6d5hsk.luna.akamaiapis.net/papi/v1/edgehostnames/?contractId=ctr_V-41DUHPB&groupId=232865',
+  method: 'GET',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-y6igvh7v5yk3c5c5-52jufhxsrppcdnlx;access_token=akab-tspktyudtkthiblu-6pedlonweipq5jpp;timestamp=20230411T14:00:54+0000;nonce=b1f053de-20d2-441b-8f78-dddafdfc3bf7;signature=8ES8vsrSPh/zKwQ++TPf9BFoTohQeT+FQ2+SVcEBtAk=',
+    host: 'akab-iateral64b7q2mtp-uhlpwx747q6d5hsk.luna.akamaiapis.net'
+  }
+}
+[2023-04-11T14:00:55.158] [INFO] devops-prov.edgegrid - response {
+  debugId: 1,
+  headers: {
+    server: 'nginx',
+    'content-type': 'application/json;charset=UTF-8',
+    'x-ids-session-id': 'a1e08a5f-3437-4a8f-b177-c3fa38bd483a, a1e08a5f-3437-4a8f-b177-c3fa38bd483a',
+    'papi-cache-status': 'CACHE_MISS',
+    'x-limit-edgehostnames-per-contract-limit': '1000',
+    'x-limit-edgehostnames-per-contract-remaining': '988',
+    'cache-control': 'no-store',
+    vary: 'accept-encoding',
+    'x-trace-id': 'd8316435681646ad',
+    'content-length': '4044',
+    date: 'Tue, 11 Apr 2023 14:00:55 GMT',
+    connection: 'keep-alive'
+  },
+  statusCode: 200,
+  body: '{\n' +
+    '  "accountId" : "act_F-AC-4917414",\n' +
+    '  "contractId" : "ctr_V-41DUHPB",\n' +
+    '  "groupId" : "grp_232865",\n' +
+    '  "edgeHostnames" : {\n' +
+    '    "items" : [ {\n' +
+    '      "edgeHostnameId" : "ehn_5319732",\n' +
+    '      "domainPrefix" : "lab001.akamai-lab.com",\n' +
+    '      "domainSuffix" : "edgesuite.net",\n' +
+    '      "status" : "CREATED",\n' +
+    '      "ipVersionBehavior" : "IPV6_COMPLIANCE",\n' +
+    '      "secure" : false,\n' +
+    '      "edgeHostnameDomain" : "lab001.akamai-lab.com.edgesuite.net"\n' +
+    '    }, {\n' +
+    '      "edgeHostnameId" : "ehn_5320465",\n' +
+    '      "domainPrefix" : "lab2",\n' +
+    '      "domainSuffix" : "edgesuite.net",\n' +
+    '      "status" : "CREATED",\n' +
+    '      "ipVersionBehavior" : "IPV6_COMPLIANCE",\n' +
+    '      "secure" : false,\n' +
+    '      "edgeHostnameDomain" : "lab2.edgesuite.net"\n' +
+    '    }, {\n' +
+    '      "edgeHostnameId" : "ehn_5320712",\n' +
+    '      "domainPrefix" : "20230403123732.akamai-lab.com",\n' +
+    '      "domainSuffix" : "edgesuite.net",\n' +
+    '      "status" : "CREATED",\n' +
+    '      "ipVersionBehavior" : "IPV6_COMPLIANCE",\n' +
+    '      "secure" : false,\n' +
+    '      "edgeHostnameDomain" : "20230403123732.akamai-lab.com.edgesuite.net"\n' +
+    '    }, {\n' +
+    '      "edgeHostnameId" : "ehn_5321903",\n' +
+    '      "domainPrefix" : "13913420230403123732.akamai-lab.com",\n' +
+    '      "domainSuffix" : "edgesuite.net",\n' +
+    '      "status" : "CREATED",\n' +
+    '      "ipVersionBehavior" : "IPV6_COMPLIANCE",\n' +
+    '      "secure" : false,\n' +
+    '      "edgeHostnameDomain" : "13913420230403123732.akamai-lab.com.edgesuite.net"\n' +
+    '    }, {\n' +
+    '      "edgeHostnameId" : "ehn_5321906",\n' +
+    '      "domainPrefix" : "230405mute-cataract.akamai-lab.com",\n' +
+    '      "domainSuffix" : "edgesuite.net",\n' +
+    '      "status" : "CREATED",\n' +
+    '      "ipVersionBehavior" : "IPV6_COMPLIANCE",\n' +
+    '      "secure" : false,\n' +
+    '      "edgeHostnameDomain" : "230405mute-cataract.akamai-lab.com.edgesuite.net"\n' +
+    '    }, {\n' +
+    '      "edgeHostnameId" : "ehn_5321907",\n' +
+    '      "domainPrefix" : "230405013816-spry-entropy.akamai-lab.com",\n' +
+    '      "domainSuffix" : "edgesuite.net",\n' +
+    '      "status" : "CREATED",\n' +
+    '      "ipVersionBehavior" : "IPV6_COMPLIANCE",\n' +
+    '      "secure" : false,\n' +
+    '      "edgeHostnameDomain" : "230405013816-spry-entropy.akamai-lab.com.edgesuite.net"\n' +
+    '    }, {\n' +
+    '      "edgeHostnameId" : "ehn_5321908",\n' +
+    '      "domainPrefix" : "230405014102-sharp-berm.akamai-lab.com",\n' +
+    '      "domainSuffix" : "edgesuite.net",\n' +
+    '      "status" : "CREATED",\n' +
+    '      "ipVersionBehavior" : "IPV6_COMPLIANCE",\n' +
+    '      "secure" : false,\n' +
+    '      "edgeHostnameDomain" : "230405014102-sharp-berm.akamai-lab.com.edgesuite.net"\n' +
+    '    }, {\n' +
+    '      "edgeHostnameId" : "ehn_5321910",\n' +
+    '      "domainPrefix" : "230405014832-international-dowel.akamai-lab.com",\n' +
+    '      "domainSuffix" : "edgesuite.net",\n' +
+    '      "status" : "CREATED",\n' +
+    '      "ipVersionBehavior" : "IPV6_COMPLIANCE",\n' +
+    '      "secure" : false,\n' +
+    '      "edgeHostnameDomain" : "230405014832-international-dowel.akamai-lab.com.edgesuite.net"\n' +
+    '    }, {\n' +
+    '      "edgeHostnameId" : "ehn_5321911",\n' +
+    '      "domainPrefix" : "230405015553-icy-pizza.akamai-lab.com",\n' +
+    '      "domainSuffix" : "edgesuite.net",\n' +
+    '      "status" : "CREATED",\n' +
+    '      "ipVersionBehavior" : "IPV6_COMPLIANCE",\n' +
+    '      "secure" : false,\n' +
+    '      "edgeHostnameDomain" : "230405015553-icy-pizza.akamai-lab.com.edgesuite.net"\n' +
+    '    }, {\n' +
+    '      "edgeHostnameId" : "ehn_5321956",\n' +
+    '      "domainPrefix" : "301500-nutritious-spire",\n' +
+    '      "domainSuffix" : "edgesuite.net",\n' +
+    '      "status" : "CREATED",\n' +
+    '      "ipVersionBehavior" : "IPV6_COMPLIANCE",\n' +
+    '      "secure" : false,\n' +
+    '      "edgeHostnameDomain" : "301500-nutritious-spire.edgesuite.net"\n' +
+    '    }, {\n' +
+    '      "edgeHostnameId" : "ehn_5321968",\n' +
+    '      "domainPrefix" : "53206-acidic-fleet.akamai-lab.com",\n' +
+    '      "domainSuffix" : "edgesuite.net",\n' +
+    '      "status" : "CREATED",\n' +
+    '      "ipVersionBehavior" : "IPV6_COMPLIANCE",\n' +
+    '      "secure" : false,\n' +
+    '      "edgeHostnameDomain" : "53206-acidic-fleet.akamai-lab.com.edgesuite.net"\n' +
+    '    }, {\n' +
+    '      "edgeHostnameId" : "ehn_5326262",\n' +
+    '      "domainPrefix" : "894710-charcoal-availability.akamai-lab.com",\n' +
+    '      "domainSuffix" : "edgesuite.net",\n' +
+    '      "status" : "CREATED",\n' +
+    '      "ipVersionBehavior" : "IPV6_COMPLIANCE",\n' +
+    '      "secure" : false,\n' +
+    '      "edgeHostnameDomain" : "894710-charcoal-availability.akamai-lab.com.edgesuite.net"\n' +
+    '    } ]\n' +
+    '  }\n' +
+    '}'
+}
+[2023-04-11T14:00:55.159] [INFO] devops-prov.openclient - Status code:  200
+[2023-04-11T14:00:55.159] [INFO] devops-prov.openclient - Body:  {
+  "accountId" : "act_F-AC-4917414",
+  "contractId" : "ctr_V-41DUHPB",
+  "groupId" : "grp_232865",
+  "edgeHostnames" : {
+    "items" : [ {
+      "edgeHostnameId" : "ehn_5319732",
+      "domainPrefix" : "lab001.akamai-lab.com",
+      "domainSuffix" : "edgesuite.net",
+      "status" : "CREATED",
+      "ipVersionBehavior" : "IPV6_COMPLIANCE",
+      "secure" : false,
+      "edgeHostnameDomain" : "lab001.akamai-lab.com.edgesuite.net"
+    }, {
+      "edgeHostnameId" : "ehn_5320465",
+      "domainPrefix" : "lab2",
+      "domainSuffix" : "edgesuite.net",
+      "status" : "CREATED",
+      "ipVersionBehavior" : "IPV6_COMPLIANCE",
+      "secure" : false,
+      "edgeHostnameDomain" : "lab2.edgesuite.net"
+    }, {
+      "edgeHostnameId" : "ehn_5320712",
+      "domainPrefix" : "20230403123732.akamai-lab.com",
+      "domainSuffix" : "edgesuite.net",
+      "status" : "CREATED",
+      "ipVersionBehavior" : "IPV6_COMPLIANCE",
+      "secure" : false,
+      "edgeHostnameDomain" : "20230403123732.akamai-lab.com.edgesuite.net"
+    }, {
+      "edgeHostnameId" : "ehn_5321903",
+      "domainPrefix" : "13913420230403123732.akamai-lab.com",
+      "domainSuffix" : "edgesuite.net",
+      "status" : "CREATED",
+      "ipVersionBehavior" : "IPV6_COMPLIANCE",
+      "secure" : false,
+      "edgeHostnameDomain" : "13913420230403123732.akamai-lab.com.edgesuite.net"
+    }, {
+      "edgeHostnameId" : "ehn_5321906",
+      "domainPrefix" : "230405mute-cataract.akamai-lab.com",
+      "domainSuffix" : "edgesuite.net",
+      "status" : "CREATED",
+      "ipVersionBehavior" : "IPV6_COMPLIANCE",
+      "secure" : false,
+      "edgeHostnameDomain" : "230405mute-cataract.akamai-lab.com.edgesuite.net"
+    }, {
+      "edgeHostnameId" : "ehn_5321907",
+      "domainPrefix" : "230405013816-spry-entropy.akamai-lab.com",
+      "domainSuffix" : "edgesuite.net",
+      "status" : "CREATED",
+      "ipVersionBehavior" : "IPV6_COMPLIANCE",
+      "secure" : false,
+      "edgeHostnameDomain" : "230405013816-spry-entropy.akamai-lab.com.edgesuite.net"
+    }, {
+      "edgeHostnameId" : "ehn_5321908",
+      "domainPrefix" : "230405014102-sharp-berm.akamai-lab.com",
+      "domainSuffix" : "edgesuite.net",
+      "status" : "CREATED",
+      "ipVersionBehavior" : "IPV6_COMPLIANCE",
+      "secure" : false,
+      "edgeHostnameDomain" : "230405014102-sharp-berm.akamai-lab.com.edgesuite.net"
+    }, {
+      "edgeHostnameId" : "ehn_5321910",
+      "domainPrefix" : "230405014832-international-dowel.akamai-lab.com",
+      "domainSuffix" : "edgesuite.net",
+      "status" : "CREATED",
+      "ipVersionBehavior" : "IPV6_COMPLIANCE",
+      "secure" : false,
+      "edgeHostnameDomain" : "230405014832-international-dowel.akamai-lab.com.edgesuite.net"
+    }, {
+      "edgeHostnameId" : "ehn_5321911",
+      "domainPrefix" : "230405015553-icy-pizza.akamai-lab.com",
+      "domainSuffix" : "edgesuite.net",
+      "status" : "CREATED",
+      "ipVersionBehavior" : "IPV6_COMPLIANCE",
+      "secure" : false,
+      "edgeHostnameDomain" : "230405015553-icy-pizza.akamai-lab.com.edgesuite.net"
+    }, {
+      "edgeHostnameId" : "ehn_5321956",
+      "domainPrefix" : "301500-nutritious-spire",
+      "domainSuffix" : "edgesuite.net",
+      "status" : "CREATED",
+      "ipVersionBehavior" : "IPV6_COMPLIANCE",
+      "secure" : false,
+      "edgeHostnameDomain" : "301500-nutritious-spire.edgesuite.net"
+    }, {
+      "edgeHostnameId" : "ehn_5321968",
+      "domainPrefix" : "53206-acidic-fleet.akamai-lab.com",
+      "domainSuffix" : "edgesuite.net",
+      "status" : "CREATED",
+      "ipVersionBehavior" : "IPV6_COMPLIANCE",
+      "secure" : false,
+      "edgeHostnameDomain" : "53206-acidic-fleet.akamai-lab.com.edgesuite.net"
+    }, {
+      "edgeHostnameId" : "ehn_5326262",
+      "domainPrefix" : "894710-charcoal-availability.akamai-lab.com",
+      "domainSuffix" : "edgesuite.net",
+      "status" : "CREATED",
+      "ipVersionBehavior" : "IPV6_COMPLIANCE",
+      "secure" : false,
+      "edgeHostnameDomain" : "894710-charcoal-availability.akamai-lab.com.edgesuite.net"
+    } ]
+  }
+}
+[2023-04-11T14:17:51.903] [INFO] devops-prov.factory - Switching account key to: 'undefined'
+[2023-04-11T14:17:51.904] [INFO] devops-prov.factory - Using credentials file: '/home/coder/workspaces/Deliver_your_first_site/documents/edgerc.config', section: 'papi'
+[2023-04-11T14:17:51.904] [INFO] devops-prov.factory - need to create papi
+[2023-04-11T14:17:51.905] [INFO] devops-prov.openclient - Requesting: GET /papi/v1/groups
+[2023-04-11T14:17:51.909] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-y6igvh7v5yk3c5c5-52jufhxsrppcdnlx;access_token=akab-tspktyudtkthiblu-6pedlonweipq5jpp;timestamp=20230411T14:17:51+0000;nonce=b91d351b-f412-4b09-af6f-e69f051c5f1d;
+
+[2023-04-11T14:17:51.910] [INFO] devops-prov.edgegrid.helpers - Body is ""
+[2023-04-11T14:17:51.910] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 0
+[2023-04-11T14:17:51.910] [INFO] devops-prov.edgegrid.helpers - Data to sign: "GET	https	akab-iateral64b7q2mtp-uhlpwx747q6d5hsk.luna.akamaiapis.net	/papi/v1/groups			EG1-HMAC-SHA256 client_token=akab-y6igvh7v5yk3c5c5-52jufhxsrppcdnlx;access_token=akab-tspktyudtkthiblu-6pedlonweipq5jpp;timestamp=20230411T14:17:51+0000;nonce=b91d351b-f412-4b09-af6f-e69f051c5f1d;" 
+
+[2023-04-11T14:17:51.911] [INFO] devops-prov.edgegrid.helpers - Signing key: A64mgKkMqoGfnQn86/l2VLA7iRSGwyECQexW/BBerMU=
+
+[2023-04-11T14:17:51.911] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-y6igvh7v5yk3c5c5-52jufhxsrppcdnlx;access_token=akab-tspktyudtkthiblu-6pedlonweipq5jpp;timestamp=20230411T14:17:51+0000;nonce=b91d351b-f412-4b09-af6f-e69f051c5f1d;signature=sqmOqKbvdBmYZckxI/Er/4PZFyVfejp3sFeoEVh7u3Y=
+
+[2023-04-11T14:17:51.928] [INFO] devops-prov.edgegrid - request {
+  debugId: 1,
+  uri: 'https://akab-iateral64b7q2mtp-uhlpwx747q6d5hsk.luna.akamaiapis.net/papi/v1/groups',
+  method: 'GET',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-y6igvh7v5yk3c5c5-52jufhxsrppcdnlx;access_token=akab-tspktyudtkthiblu-6pedlonweipq5jpp;timestamp=20230411T14:17:51+0000;nonce=b91d351b-f412-4b09-af6f-e69f051c5f1d;signature=sqmOqKbvdBmYZckxI/Er/4PZFyVfejp3sFeoEVh7u3Y=',
+    host: 'akab-iateral64b7q2mtp-uhlpwx747q6d5hsk.luna.akamaiapis.net'
+  }
+}
+[2023-04-11T14:17:53.960] [INFO] devops-prov.edgegrid - response {
+  debugId: 1,
+  headers: {
+    server: 'nginx',
+    'content-type': 'application/json;charset=UTF-8',
+    'x-ids-session-id': '034b0dc5-53cb-415e-a426-69a23c0fe186, 034b0dc5-53cb-415e-a426-69a23c0fe186',
+    'papi-cache-status': 'CACHE_MISS',
+    'cache-control': 'no-store',
+    vary: 'accept-encoding',
+    'x-trace-id': 'a51b64356c111cb6',
+    'content-length': '275',
+    date: 'Tue, 11 Apr 2023 14:17:53 GMT',
+    connection: 'keep-alive'
+  },
+  statusCode: 200,
+  body: '{\n' +
+    '  "accountId" : "act_F-AC-4917414",\n' +
+    '  "accountName" : "Marketplace Test 01",\n' +
+    '  "groups" : {\n' +
+    '    "items" : [ {\n' +
+    '      "groupName" : "20230323012443",\n' +
+    '      "groupId" : "grp_232865",\n' +
+    '      "parentGroupId" : "grp_232397",\n' +
+    '      "contractIds" : [ "ctr_V-41DUHPB" ]\n' +
+    '    } ]\n' +
+    '  }\n' +
+    '}'
+}
+[2023-04-11T14:17:53.960] [INFO] devops-prov.openclient - Status code:  200
+[2023-04-11T14:17:53.960] [INFO] devops-prov.openclient - Body:  {
+  "accountId" : "act_F-AC-4917414",
+  "accountName" : "Marketplace Test 01",
+  "groups" : {
+    "items" : [ {
+      "groupName" : "20230323012443",
+      "groupId" : "grp_232865",
+      "parentGroupId" : "grp_232397",
+      "contractIds" : [ "ctr_V-41DUHPB" ]
+    } ]
+  }
+}
+[2023-04-11T14:17:54.408] [INFO] devops-prov.factory - Switching account key to: 'undefined'
+[2023-04-11T14:17:54.409] [INFO] devops-prov.factory - Using credentials file: '/home/coder/workspaces/Deliver_your_first_site/documents/edgerc.config', section: 'papi'
+[2023-04-11T14:17:54.409] [INFO] devops-prov.factory - need to create papi
+[2023-04-11T14:17:54.410] [INFO] devops-prov.openclient - Requesting: GET /papi/v1/groups
+[2023-04-11T14:17:54.414] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-y6igvh7v5yk3c5c5-52jufhxsrppcdnlx;access_token=akab-tspktyudtkthiblu-6pedlonweipq5jpp;timestamp=20230411T14:17:54+0000;nonce=dfc88936-a00d-499d-b50e-d58e0b0fc35b;
+
+[2023-04-11T14:17:54.414] [INFO] devops-prov.edgegrid.helpers - Body is ""
+[2023-04-11T14:17:54.414] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 0
+[2023-04-11T14:17:54.415] [INFO] devops-prov.edgegrid.helpers - Data to sign: "GET	https	akab-iateral64b7q2mtp-uhlpwx747q6d5hsk.luna.akamaiapis.net	/papi/v1/groups			EG1-HMAC-SHA256 client_token=akab-y6igvh7v5yk3c5c5-52jufhxsrppcdnlx;access_token=akab-tspktyudtkthiblu-6pedlonweipq5jpp;timestamp=20230411T14:17:54+0000;nonce=dfc88936-a00d-499d-b50e-d58e0b0fc35b;" 
+
+[2023-04-11T14:17:54.415] [INFO] devops-prov.edgegrid.helpers - Signing key: 9ULeqQheMBjWGYQsLHmXnR2kKYXXYN4yk/1lLbvm04k=
+
+[2023-04-11T14:17:54.415] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-y6igvh7v5yk3c5c5-52jufhxsrppcdnlx;access_token=akab-tspktyudtkthiblu-6pedlonweipq5jpp;timestamp=20230411T14:17:54+0000;nonce=dfc88936-a00d-499d-b50e-d58e0b0fc35b;signature=eAYtaDidkSFadZb/F/xPeDIQaRjGzTc3YzI1wR5tWSs=
+
+[2023-04-11T14:17:54.430] [INFO] devops-prov.edgegrid - request {
+  debugId: 1,
+  uri: 'https://akab-iateral64b7q2mtp-uhlpwx747q6d5hsk.luna.akamaiapis.net/papi/v1/groups',
+  method: 'GET',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-y6igvh7v5yk3c5c5-52jufhxsrppcdnlx;access_token=akab-tspktyudtkthiblu-6pedlonweipq5jpp;timestamp=20230411T14:17:54+0000;nonce=dfc88936-a00d-499d-b50e-d58e0b0fc35b;signature=eAYtaDidkSFadZb/F/xPeDIQaRjGzTc3YzI1wR5tWSs=',
+    host: 'akab-iateral64b7q2mtp-uhlpwx747q6d5hsk.luna.akamaiapis.net'
+  }
+}
+[2023-04-11T14:17:55.152] [INFO] devops-prov.edgegrid - response {
+  debugId: 1,
+  headers: {
+    server: 'nginx',
+    'content-type': 'application/json;charset=UTF-8',
+    'x-ids-session-id': 'f19074fc-f82c-4ca3-b2ad-f7ce7e3861d5, f19074fc-f82c-4ca3-b2ad-f7ce7e3861d5',
+    'papi-cache-status': 'CACHE_MISS',
+    'cache-control': 'no-store',
+    vary: 'accept-encoding',
+    'x-trace-id': 'e53f64356c121b23',
+    'content-length': '275',
+    date: 'Tue, 11 Apr 2023 14:17:55 GMT',
+    connection: 'keep-alive'
+  },
+  statusCode: 200,
+  body: '{\n' +
+    '  "accountId" : "act_F-AC-4917414",\n' +
+    '  "accountName" : "Marketplace Test 01",\n' +
+    '  "groups" : {\n' +
+    '    "items" : [ {\n' +
+    '      "groupName" : "20230323012443",\n' +
+    '      "groupId" : "grp_232865",\n' +
+    '      "parentGroupId" : "grp_232397",\n' +
+    '      "contractIds" : [ "ctr_V-41DUHPB" ]\n' +
+    '    } ]\n' +
+    '  }\n' +
+    '}'
+}
+[2023-04-11T14:17:55.153] [INFO] devops-prov.openclient - Status code:  200
+[2023-04-11T14:17:55.153] [INFO] devops-prov.openclient - Body:  {
+  "accountId" : "act_F-AC-4917414",
+  "accountName" : "Marketplace Test 01",
+  "groups" : {
+    "items" : [ {
+      "groupName" : "20230323012443",
+      "groupId" : "grp_232865",
+      "parentGroupId" : "grp_232397",
+      "contractIds" : [ "ctr_V-41DUHPB" ]
+    } ]
+  }
+}

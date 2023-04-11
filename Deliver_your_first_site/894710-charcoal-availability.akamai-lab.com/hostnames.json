@@ -1,0 +1,9 @@
+[
+    {
+        "cnameType": "EDGE_HOSTNAME",
+        "edgeHostnameId": 5326262,
+        "cnameFrom": "894710-charcoal-availability.akamai-lab.com",
+        "cnameTo": "894710-charcoal-availability.akamai-lab.com.edgesuite.net",
+        "certProvisioningType": "CPS_MANAGED"
+    }
+]

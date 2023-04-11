@@ -6,9 +6,6 @@ if len(sys.argv) > 1:
     host = sys.argv[2]
     a_token = sys.argv[3]
     c_token = sys.argv[4]
-    eh_name = sys.argv[5]
-    ctr_id = sys.argv[6]
-    grp_id = sys.argv[7]
     
 else:
     print('Usage: createEdgehostname.py client_secret host access_token client_token eh_name')
