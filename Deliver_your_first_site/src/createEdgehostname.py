@@ -16,7 +16,7 @@ else:
 
 # host = 'akab-omo2alokxehw6u75-g5fsb3ceydj7ikva.luna.akamaiapis.net'
 baseurl = 'https://'+ host +'/'
-url = baseurl + '/papi/v1/edgehostnames' + "?contractId=ctr_V-41DUHPB&groupId=grp_232865"
+url = baseurl + '/papi/v1/edgehostnames?contractId=' + ctr_id + '&groupId=' + grp_id
 domainPrefix = str(datetime.datetime.now().strftime("%y%m%d%H%M%S")) + "-" + randomname.get_name() + ".akamai-lab.com"
 s = requests.Session()
 s.auth = EdgeGridAuth(

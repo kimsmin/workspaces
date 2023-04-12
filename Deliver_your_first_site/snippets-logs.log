@@ -28950,3 +28950,69 @@
     ruleFormat: 'v2023-01-05'
   }
 }
+[2023-04-12T00:08:49.226] [INFO] devops-prov.factory - Switching account key to: 'undefined'
+[2023-04-12T00:08:49.228] [INFO] devops-prov.factory - Using credentials file: '/home/coder/.edgerc', section: 'papi'
+[2023-04-12T00:08:49.228] [INFO] devops-prov.factory - need to create papi
+[2023-04-12T00:08:49.229] [INFO] devops-prov.openclient - Requesting: GET /papi/v1/groups
+[2023-04-12T00:08:49.232] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-wz7cik3diqlplq4g-ks7cgz3o42mmafqz;access_token=akab-tspktyudtkthiblu-6pedlonweipq5jpp;timestamp=20230412T00:08:49+0000;nonce=a5946310-8284-4f55-9d12-b20485e31699;
+
+[2023-04-12T00:08:49.232] [INFO] devops-prov.edgegrid.helpers - Body is ""
+[2023-04-12T00:08:49.233] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 0
+[2023-04-12T00:08:49.233] [INFO] devops-prov.edgegrid.helpers - Data to sign: "GET	https	akab-iateral64b7q2mtp-uhlpwx747q6d5hsk.luna.akamaiapis.net	/papi/v1/groups			EG1-HMAC-SHA256 client_token=akab-wz7cik3diqlplq4g-ks7cgz3o42mmafqz;access_token=akab-tspktyudtkthiblu-6pedlonweipq5jpp;timestamp=20230412T00:08:49+0000;nonce=a5946310-8284-4f55-9d12-b20485e31699;" 
+
+[2023-04-12T00:08:49.233] [INFO] devops-prov.edgegrid.helpers - Signing key: EbS7WwmxBDPmbmwfR6WKAduvKKWsvitGY+KWI5BIDPI=
+
+[2023-04-12T00:08:49.234] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-wz7cik3diqlplq4g-ks7cgz3o42mmafqz;access_token=akab-tspktyudtkthiblu-6pedlonweipq5jpp;timestamp=20230412T00:08:49+0000;nonce=a5946310-8284-4f55-9d12-b20485e31699;signature=A2XQEipUhb5C+ijwuRRj/KrKFEk1iCMOGDg9Z0m5M00=
+
+[2023-04-12T00:08:49.253] [INFO] devops-prov.edgegrid - request {
+  debugId: 1,
+  uri: 'https://akab-iateral64b7q2mtp-uhlpwx747q6d5hsk.luna.akamaiapis.net/papi/v1/groups',
+  method: 'GET',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-wz7cik3diqlplq4g-ks7cgz3o42mmafqz;access_token=akab-tspktyudtkthiblu-6pedlonweipq5jpp;timestamp=20230412T00:08:49+0000;nonce=a5946310-8284-4f55-9d12-b20485e31699;signature=A2XQEipUhb5C+ijwuRRj/KrKFEk1iCMOGDg9Z0m5M00=',
+    host: 'akab-iateral64b7q2mtp-uhlpwx747q6d5hsk.luna.akamaiapis.net'
+  }
+}
+[2023-04-12T00:08:50.654] [INFO] devops-prov.edgegrid - response {
+  debugId: 1,
+  headers: {
+    server: 'nginx',
+    'content-type': 'application/json;charset=UTF-8',
+    'x-ids-session-id': 'efdcc8cb-a40c-42d4-a5a6-1325d9a22e63, efdcc8cb-a40c-42d4-a5a6-1325d9a22e63',
+    'papi-cache-status': 'CACHE_MISS',
+    'cache-control': 'no-store',
+    vary: 'accept-encoding',
+    'x-trace-id': 'f1be6435f6928ff6',
+    'content-length': '275',
+    date: 'Wed, 12 Apr 2023 00:08:50 GMT',
+    connection: 'keep-alive'
+  },
+  statusCode: 200,
+  body: '{\n' +
+    '  "accountId" : "act_F-AC-4917414",\n' +
+    '  "accountName" : "Marketplace Test 01",\n' +
+    '  "groups" : {\n' +
+    '    "items" : [ {\n' +
+    '      "groupName" : "20230323012443",\n' +
+    '      "groupId" : "grp_232865",\n' +
+    '      "parentGroupId" : "grp_232397",\n' +
+    '      "contractIds" : [ "ctr_V-41DUHPB" ]\n' +
+    '    } ]\n' +
+    '  }\n' +
+    '}'
+}
+[2023-04-12T00:08:50.655] [INFO] devops-prov.openclient - Status code:  200
+[2023-04-12T00:08:50.655] [INFO] devops-prov.openclient - Body:  {
+  "accountId" : "act_F-AC-4917414",
+  "accountName" : "Marketplace Test 01",
+  "groups" : {
+    "items" : [ {
+      "groupName" : "20230323012443",
+      "groupId" : "grp_232865",
+      "parentGroupId" : "grp_232397",
+      "contractIds" : [ "ctr_V-41DUHPB" ]
+    } ]
+  }
+}

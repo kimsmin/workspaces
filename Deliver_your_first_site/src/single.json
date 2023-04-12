@@ -1,0 +1,20 @@
+{
+    "property_info": {
+      "contract_id": "ctr_V-41DUHPB",
+      "product_id": "prd_Fresca", 
+      "property_hostname": "862874-obnoxious-portico.akamai-lab.com", 
+      "property_origin": "origin--main--20230412053747--a.b.akamai-lab.com",
+      "group_id": "grp_232865" 
+    },
+    "edge_hostname": {
+      "secure_by_default": false,
+      "use_existing_edge_hostname": "862874-obnoxious-portico.akamai-lab.com.edgesuite.net",
+      "create_from_existing_enrollment_id": 0
+    },
+    "update_waf_info": {
+      "create_new_security_config": false,
+      "waf_config_name": ""
+    },
+    "activate_production": false,
+    "notification_emails": ["sakim@akamai.com"]
+  }
