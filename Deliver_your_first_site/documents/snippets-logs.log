@@ -18325,3 +18325,64 @@
     } ]
   }
 }
+[2023-04-17T08:35:41.737] [INFO] devops-prov.factory - Switching account key to: 'undefined'
+[2023-04-17T08:35:41.738] [INFO] devops-prov.factory - Using credentials file: '/home/coder/.edgerc', section: 'papi'
+[2023-04-17T08:35:41.738] [INFO] devops-prov.factory - need to create papi
+[2023-04-17T08:35:41.739] [INFO] devops-prov.openclient - Requesting: GET /papi/v1/contracts
+[2023-04-17T08:35:41.742] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-3ugbu53qpsxktoxq-zts4dsgotlqvorq5;access_token=akab-tspktyudtkthiblu-6pedlonweipq5jpp;timestamp=20230417T08:35:41+0000;nonce=4bf6ff19-c03c-45ae-b6d0-d5448dfa2863;
+
+[2023-04-17T08:35:41.743] [INFO] devops-prov.edgegrid.helpers - Body is ""
+[2023-04-17T08:35:41.743] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 0
+[2023-04-17T08:35:41.743] [INFO] devops-prov.edgegrid.helpers - Data to sign: "GET	https	akab-iateral64b7q2mtp-uhlpwx747q6d5hsk.luna.akamaiapis.net	/papi/v1/contracts			EG1-HMAC-SHA256 client_token=akab-3ugbu53qpsxktoxq-zts4dsgotlqvorq5;access_token=akab-tspktyudtkthiblu-6pedlonweipq5jpp;timestamp=20230417T08:35:41+0000;nonce=4bf6ff19-c03c-45ae-b6d0-d5448dfa2863;" 
+
+[2023-04-17T08:35:41.744] [INFO] devops-prov.edgegrid.helpers - Signing key: HYVtW9lbMf9U1NHJsUFmsfnAdGTfKdq+2GlBC+XKaKo=
+
+[2023-04-17T08:35:41.744] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-3ugbu53qpsxktoxq-zts4dsgotlqvorq5;access_token=akab-tspktyudtkthiblu-6pedlonweipq5jpp;timestamp=20230417T08:35:41+0000;nonce=4bf6ff19-c03c-45ae-b6d0-d5448dfa2863;signature=eV4KrW8OFn9/ye9on1LNcF1cjA5AZCfD4ZP9bnDi0lA=
+
+[2023-04-17T08:35:41.760] [INFO] devops-prov.edgegrid - request {
+  debugId: 1,
+  uri: 'https://akab-iateral64b7q2mtp-uhlpwx747q6d5hsk.luna.akamaiapis.net/papi/v1/contracts',
+  method: 'GET',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-3ugbu53qpsxktoxq-zts4dsgotlqvorq5;access_token=akab-tspktyudtkthiblu-6pedlonweipq5jpp;timestamp=20230417T08:35:41+0000;nonce=4bf6ff19-c03c-45ae-b6d0-d5448dfa2863;signature=eV4KrW8OFn9/ye9on1LNcF1cjA5AZCfD4ZP9bnDi0lA=',
+    host: 'akab-iateral64b7q2mtp-uhlpwx747q6d5hsk.luna.akamaiapis.net'
+  }
+}
+[2023-04-17T08:35:42.162] [INFO] devops-prov.edgegrid - response {
+  debugId: 1,
+  headers: {
+    'content-length': '405',
+    date: 'Mon, 17 Apr 2023 08:35:42 GMT',
+    connection: 'close',
+    'www-authenticate': 'EG1-HMAC-SHA256 realm="akab-iateral64b7q2mtp-uhlpwx747q6d5hsk.luna.akamaiapis.net"',
+    'content-type': 'application/problem+json'
+  },
+  statusCode: 401,
+  body: '{\n' +
+    '  "type": "https://problems.luna.akamaiapis.net/-/pep-authn/deny",\n' +
+    '  "title": "Not authorized",\n' +
+    '  "status": 401,\n' +
+    '  "detail": "Inactive client token",\n' +
+    '  "instance": "https://akab-iateral64b7q2mtp-uhlpwx747q6d5hsk.luna.akamaiapis.net/papi/v1/contracts",\n' +
+    '  "method": "GET",\n' +
+    '  "serverIp": "23.35.122.35",\n' +
+    '  "clientIp": "172.105.203.185",\n' +
+    '  "requestId": "43c5dde8",\n' +
+    '  "requestTime": "2023-04-17T08:35:42Z"\n' +
+    '}\n'
+}
+[2023-04-17T08:35:42.163] [ERROR] devops-prov.openclient - request failure, status code: '401', response body:  {
+  "type": "https://problems.luna.akamaiapis.net/-/pep-authn/deny",
+  "title": "Not authorized",
+  "status": 401,
+  "detail": "Inactive client token",
+  "instance": "https://akab-iateral64b7q2mtp-uhlpwx747q6d5hsk.luna.akamaiapis.net/papi/v1/contracts",
+  "method": "GET",
+  "serverIp": "23.35.122.35",
+  "clientIp": "172.105.203.185",
+  "requestId": "43c5dde8",
+  "requestTime": "2023-04-17T08:35:42Z"
+}
+
